@@ -1,0 +1,7 @@
+[user]
+	name = Muhammad Izza Alfiansyah
+	email = iansyah724@gmail.com
+[http]
+	postBuffer = 524288000
+[init]
+	defaultBranch = main
