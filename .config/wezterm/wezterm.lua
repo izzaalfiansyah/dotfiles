@@ -5,9 +5,9 @@ local config = wezterm.config_builder()
 config.color_scheme = "Tokyo Night"
 
 config.font = wezterm.font_with_fallback({
+	{ family = "JetBrainsMonoNL Nerd Font Mono" },
 	{ family = "Hack Nerd Font" },
 	{ family = "Fira Code" },
-	{ family = "JetBrainsMonoNL Nerd Font Mono" },
 })
 config.font_size = 12
 
