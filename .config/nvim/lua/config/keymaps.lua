@@ -35,7 +35,7 @@ vim.keymap.set("n", "<S-tab>", "[b", opts)
 vim.keymap.set("n", "<leader>fs", vim.cmd.write, { desc = "Save file" })
 
 -- Close Tab
-vim.keymap.set("n", "<leader>fq", ":bd<CR>", { desc = "Delete buffer" })
+vim.keymap.set("n", "<leader>fw", ":bd<CR>", { desc = "Delete buffer" })
 
 -- Set File Type
 vim.keymap.set("n", "<leader>fj", function()
