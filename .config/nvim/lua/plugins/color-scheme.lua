@@ -18,17 +18,17 @@ return {
       transparent_background = true,
     },
   },
-  {
-    "folke/tokyonight.nvim",
-    enable = false,
-    lazy = false,
-    opts = {
-      style = "night",
-      transparent = true,
-      styles = {
-        sidebars = "transparent",
-        floats = "transparent",
-      },
-    },
-  },
+  -- {
+  --   "folke/tokyonight.nvim",
+  --   enable = false,
+  --   lazy = false,
+  --   opts = {
+  --     style = "night",
+  --     transparent = true,
+  --     styles = {
+  --       sidebars = "transparent",
+  --       floats = "transparent",
+  --     },
+  --   },
+  -- },
 }
