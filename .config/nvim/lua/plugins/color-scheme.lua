@@ -1,13 +1,26 @@
 return {
-  -- {
-  --   "catppuccin/nvim",
-  --   lazy = false,
-  --   opts = {
-  --     transparent_background = true,
-  --   },
-  -- },
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "catppuccin",
+    },
+  },
+  {
+    "catppuccin/nvim",
+    name = "catppuccin",
+    lazy = false,
+    opts = {
+      flavour = "macchiato", -- latte, frappe, macchiato, mocha
+      background = {
+        light = "latte",
+        dark = "mocha",
+      },
+      transparent_background = true,
+    },
+  },
   {
     "folke/tokyonight.nvim",
+    enable = false,
     lazy = false,
     opts = {
       style = "night",
@@ -16,12 +29,6 @@ return {
         sidebars = "transparent",
         floats = "transparent",
       },
-    },
-  },
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "tokyonight",
     },
   },
 }
