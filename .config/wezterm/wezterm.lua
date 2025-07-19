@@ -18,7 +18,7 @@ config.tab_max_width = 30
 
 config.window_decorations = "RESIZE"
 
-config.window_background_opacity = 0.7
+config.window_background_opacity = 0.75
 config.macos_window_background_blur = 30
 
 local function tab_title(tab_info)
