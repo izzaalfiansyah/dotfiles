@@ -4,3 +4,5 @@
 !.zshrc
 !.config/
 !.config/**/*
+!walls/
+!walls/**/*
