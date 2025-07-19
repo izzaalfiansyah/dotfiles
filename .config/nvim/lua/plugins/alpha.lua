@@ -44,10 +44,10 @@ return {
     dashboard.section.footer.opts.hl = "AlphaFooter"
     dashboard.opts.layout[1].val = 8
 
-    vim.api.nvim_set_hl(0, "AlphaHeader", { fg = "#c0caf5", bold = true })
-    vim.api.nvim_set_hl(0, "AlphaButtons", { fg = "#77acff" })
-    -- vim.api.nvim_set_hl(0, "AlphaShortcut", { fg = "#c0caf5" })
-    vim.api.nvim_set_hl(0, "AlphaFooter", { fg = "#c0caf5" })
+    -- vim.api.nvim_set_hl(0, "AlphaHeader", { fg = "#c0caf5", bold = true })
+    -- vim.api.nvim_set_hl(0, "AlphaButtons", { fg = "#77acff" })
+    -- -- vim.api.nvim_set_hl(0, "AlphaShortcut", { fg = "#c0caf5" })
+    -- vim.api.nvim_set_hl(0, "AlphaFooter", { fg = "#c0caf5" })
 
     return dashboard
   end,
