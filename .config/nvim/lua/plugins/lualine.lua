@@ -4,9 +4,9 @@ return {
   opts = {
     sections = {
       lualine_x = {
-        "encoding",
-        "filetype",
         "searchCount",
+        "filetype",
+        "encoding",
       },
     },
   },
