@@ -25,7 +25,6 @@ vim.keymap.set("i", ";;", "=>", { desc = "Type => in insert mode", noremap = tru
 
 -- Select all
 vim.keymap.set("n", "<C-a>", "ggVG")
-vim.keymap.set("n", "<leader>aa", "ggVG")
 
 -- Jump tab
 vim.keymap.set("n", "<tab>", "]b", opts)
