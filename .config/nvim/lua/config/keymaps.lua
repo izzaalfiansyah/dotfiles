@@ -47,3 +47,8 @@ end, { desc = "Change Filetype" })
 
 -- Disable recording typing
 vim.keymap.set("n", "q", "<Nop>", { noremap = true, silent = true })
+
+-- Codeium
+vim.keymap.set("n", "<leader>acc", ":Codeium Chat<CR>", { desc = "Codeium Chat" })
+vim.keymap.set("n", "<leader>act", ":Codeium Toggle<CR>", { desc = "Codeium Toggle" })
+vim.keymap.set("n", "<leader>aca", ":Codeium Auth<CR>", { desc = "Codeium Auth" })
