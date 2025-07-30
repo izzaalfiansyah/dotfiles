@@ -61,6 +61,13 @@ tabline.setup({
 
 tabline.apply_to_config(config)
 
+config.window_padding = {
+	left = 0,
+	right = 0,
+	top = 6,
+	bottom = 3,
+}
+
 config.mouse_bindings = {
 	{
 		event = { Up = { streak = 1, button = "Left" } },

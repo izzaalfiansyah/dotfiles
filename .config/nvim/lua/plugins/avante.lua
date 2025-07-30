@@ -4,6 +4,7 @@ return {
   build = "make",
   event = "VeryLazy",
   version = false, -- Never set this value to "*"! Never!
+  enabled = false,
   ---@module 'avante'
   ---@type avante.Config
   opts = {
