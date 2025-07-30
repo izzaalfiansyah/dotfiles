@@ -27,6 +27,13 @@ return {
           flutter_path = "flutter", -- Jika flutter tidak ada di PATH, beri path absolut
         },
       })
+
+      vim.keymap.set("n", "<leader>rs", ":FlutterRun<cr>", { desc = "Flutter Run" })
+      vim.keymap.set("n", "<leader>rr", ":FlutterReload<cr>", { desc = "Flutter Reload" })
+      vim.keymap.set("n", "<leader>rR", ":FlutterRestart<cr>", { desc = "Flutter Restart" })
+      vim.keymap.set("n", "<leader>rq", ":FlutterQuit<cr>", { desc = "Flutter end session" })
+      vim.keymap.set("n", "<leader>rl", ":FlutterLogToggle<cr>", { desc = "Flutter log toggle" })
+      vim.keymap.set("n", "<leader>rd", ":FlutterDevices<cr>", { desc = "Flutter devices" })
     end,
     ft = "dart",
   },
@@ -48,12 +55,12 @@ return {
         return name, path
       end
 
-      vim.keymap.set("n", "<leader>fbc", function()
+      vim.keymap.set("n", "<leader>rbc", function()
         local name, path = get_name_path("Cubit")
         require("bloc").create_cubit(name, path)
       end, { desc = "Create Cubit (Prompt)" })
 
-      vim.keymap.set("n", "<leader>fbb", function()
+      vim.keymap.set("n", "<leader>rbb", function()
         local name, path = get_name_path("Bloc")
         require("bloc").create_bloc(name, path)
       end, { desc = "Create Bloc (Prompt)" })
@@ -67,12 +74,12 @@ return {
     lazy = false,
     keys = {
       {
-        "<leader>gf",
+        "<leader>rfg",
         "<cmd>FlutterFreezedGenForCurrentFile<CR>",
         desc = "Generate flutter freezed for the current file",
       },
-      { "<leader>gi", "<cmd>FlutterFreezedInfoToggle<CR>", desc = "Toggle flutter freezed generation info" },
-      { "<leader>gx", "<cmd>FlutterFreezedStopGen<CR>", desc = "Stop generating flutter freezed files" },
+      { "<leader>rft", "<cmd>FlutterFreezedInfoToggle<CR>", desc = "Toggle flutter freezed generation info" },
+      { "<leader>rfq", "<cmd>FlutterFreezedStopGen<CR>", desc = "Stop generating flutter freezed files" },
     },
   },
   {
