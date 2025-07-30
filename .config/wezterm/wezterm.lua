@@ -19,7 +19,7 @@ config.tab_max_width = 30
 config.window_decorations = "RESIZE"
 
 config.window_background_opacity = 0.75
-config.macos_window_background_blur = 30
+config.macos_window_background_blur = 15
 
 local function tab_title(tab_info)
 	local title = tab_info.tab_title
@@ -66,65 +66,74 @@ wezterm.on("format-tab-title", function(tab, tabs, panes, config, hover, max_wid
 	}
 end)
 
-config.keys = {
-	-- Split pane horizontal
+config.mouse_bindings = {
+	-- Ctrl-click will open the link under the mouse cursor
 	{
-		key = "|",
-		mods = "ALT|SHIFT",
-		action = wezterm.action.SplitHorizontal({ domain = "CurrentPaneDomain" }),
-	},
-
-	-- Split pane vertical
-	{
-		key = "_",
-		mods = "ALT|SHIFT",
-		action = wezterm.action.SplitVertical({ domain = "CurrentPaneDomain" }),
-	},
-
-	-- Move between panes
-	{
-		key = "h",
-		mods = "ALT",
-		action = wezterm.action.ActivatePaneDirection("Left"),
-	},
-	{
-		key = "l",
-		mods = "ALT",
-		action = wezterm.action.ActivatePaneDirection("Right"),
-	},
-	{
-		key = "k",
-		mods = "ALT",
-		action = wezterm.action.ActivatePaneDirection("Up"),
-	},
-	{
-		key = "j",
-		mods = "ALT",
-		action = wezterm.action.ActivatePaneDirection("Down"),
-	},
-
-	-- Resizing panes (need to stop skhd)
-	{
-		key = "h",
-		mods = "ALT|SHIFT",
-		action = wezterm.action.AdjustPaneSize({ "Left", 2 }),
-	},
-	{
-		key = "l",
-		mods = "ALT|SHIFT",
-		action = wezterm.action.AdjustPaneSize({ "Right", 2 }),
-	},
-	{
-		key = "k",
-		mods = "ALT|SHIFT",
-		action = wezterm.action.AdjustPaneSize({ "Up", 1 }),
-	},
-	{
-		key = "j",
-		mods = "ALT|SHIFT",
-		action = wezterm.action.AdjustPaneSize({ "Down", 1 }),
+		event = { Up = { streak = 1, button = "Left" } },
+		mods = "CTRL",
+		action = wezterm.action.OpenLinkAtMouseCursor,
 	},
 }
+
+-- config.keys = {
+-- 	-- Split pane horizontal
+-- 	{
+-- 		key = "|",
+-- 		mods = "ALT|SHIFT",
+-- 		action = wezterm.action.SplitHorizontal({ domain = "CurrentPaneDomain" }),
+-- 	},
+--
+-- 	-- Split pane vertical
+-- 	{
+-- 		key = "_",
+-- 		mods = "ALT|SHIFT",
+-- 		action = wezterm.action.SplitVertical({ domain = "CurrentPaneDomain" }),
+-- 	},
+--
+-- 	-- Move between panes
+-- 	{
+-- 		key = "h",
+-- 		mods = "ALT",
+-- 		action = wezterm.action.ActivatePaneDirection("Left"),
+-- 	},
+-- 	{
+-- 		key = "l",
+-- 		mods = "ALT",
+-- 		action = wezterm.action.ActivatePaneDirection("Right"),
+-- 	},
+-- 	{
+-- 		key = "k",
+-- 		mods = "ALT",
+-- 		action = wezterm.action.ActivatePaneDirection("Up"),
+-- 	},
+-- 	{
+-- 		key = "j",
+-- 		mods = "ALT",
+-- 		action = wezterm.action.ActivatePaneDirection("Down"),
+-- 	},
+--
+-- 	-- Resizing panes (need to stop skhd)
+-- 	{
+-- 		key = "h",
+-- 		mods = "ALT|SHIFT",
+-- 		action = wezterm.action.AdjustPaneSize({ "Left", 2 }),
+-- 	},
+-- 	{
+-- 		key = "l",
+-- 		mods = "ALT|SHIFT",
+-- 		action = wezterm.action.AdjustPaneSize({ "Right", 2 }),
+-- 	},
+-- 	{
+-- 		key = "k",
+-- 		mods = "ALT|SHIFT",
+-- 		action = wezterm.action.AdjustPaneSize({ "Up", 1 }),
+-- 	},
+-- 	{
+-- 		key = "j",
+-- 		mods = "ALT|SHIFT",
+-- 		action = wezterm.action.AdjustPaneSize({ "Down", 1 }),
+-- 	},
+-- }
 
 -- change term using kitty. run command below:
 -- tempfile=$(mktemp) \
