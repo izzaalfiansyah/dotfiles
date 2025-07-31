@@ -28,7 +28,9 @@ vim.keymap.set("n", "<C-a>", "ggVG")
 
 -- Save File
 vim.keymap.set("n", "<leader>fs", vim.cmd.write, { desc = "Save file" })
-vim.keymap.set("niv", "<C-s>", vim.cmd.write, { desc = "Save file" })
+vim.keymap.set("n", "<C-s>", vim.cmd.write, { desc = "Save file" })
+vim.keymap.set("i", "<C-s>", vim.cmd.write, { desc = "Save file" })
+vim.keymap.set("v", "<C-s>", vim.cmd.write, { desc = "Save file" })
 
 -- Close Tab
 vim.keymap.set("n", "<leader>fw", ":bd<CR>", { desc = "Delete buffer" })
