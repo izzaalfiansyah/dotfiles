@@ -16,7 +16,6 @@ local opts = { noremap = true, silent = true }
 
 -- Exit insert, visual, and terminal mode using jk
 vim.keymap.set("i", "jk", "<Esc>", { desc = "Exit insert mode with jk" })
--- vim.keymap.set("v", "<Esc>", "<Esc>", { desc = "Exit visual mode with q" })
 vim.keymap.set("t", "<Esc>", [[<C-\><C-n>]], { desc = "Exit terminal mode with qq", noremap = true, silent = true })
 
 -- Keymap for set attribute from object and set array on php
