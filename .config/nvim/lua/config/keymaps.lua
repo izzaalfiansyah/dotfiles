@@ -23,21 +23,18 @@ vim.keymap.set("t", "<Esc>", [[<C-\><C-n>]], { desc = "Exit terminal mode with q
 vim.keymap.set("i", ",,", "->", { desc = "Type -> in insert mode", noremap = true })
 vim.keymap.set("i", ";;", "=>", { desc = "Type => in insert mode", noremap = true })
 
--- Select all
+-- Selection
 vim.keymap.set("n", "<C-a>", "ggVG")
-
--- Jump tab
-vim.keymap.set("n", "<tab>", "]b", opts)
-vim.keymap.set("n", "<S-tab>", "[b", opts)
 
 -- Save File
 vim.keymap.set("n", "<leader>fs", vim.cmd.write, { desc = "Save file" })
+vim.keymap.set("niv", "<C-s>", vim.cmd.write, { desc = "Save file" })
 
 -- Close Tab
 vim.keymap.set("n", "<leader>fw", ":bd<CR>", { desc = "Delete buffer" })
 
 -- Set File Type
-vim.keymap.set("n", "<leader>fj", function()
+vim.keymap.set("n", "<leader>sf", function()
   vim.ui.input({ prompt = "Set filetype: " }, function(input)
     if input then
       vim.cmd("set filetype=" .. input)
