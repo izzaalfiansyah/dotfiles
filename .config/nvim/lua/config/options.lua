@@ -14,3 +14,4 @@ vim.g.lazyvim_picker = "fzf"
 opt.wrap = true
 opt.relativenumber = false
 opt.number = true
+opt.termguicolors = true
