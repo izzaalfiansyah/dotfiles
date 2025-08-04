@@ -32,7 +32,9 @@ return {
       vim.keymap.set("n", "<leader>rr", ":FlutterReload<cr>", { desc = "Flutter Reload" })
       vim.keymap.set("n", "<leader>rR", ":FlutterRestart<cr>", { desc = "Flutter Restart" })
       vim.keymap.set("n", "<leader>rq", ":FlutterQuit<cr>", { desc = "Flutter end session" })
-      vim.keymap.set("n", "<leader>rl", ":FlutterLogToggle<cr>", { desc = "Flutter log toggle" })
+      vim.keymap.set("n", "<leader>rl", ":FlutterLogToggle<cr>", { desc = "Flutter toggle log" })
+      vim.keymap.set("n", "<leader>rc", ":FlutterLogClear<cr>", { desc = "Flutter clear log" })
+      vim.keymap.set("n", "<leader>ro", ":FlutterOutlineToggle<cr>", { desc = "Flutter toggle outline" })
       vim.keymap.set("n", "<leader>rd", ":FlutterDevices<cr>", { desc = "Flutter devices" })
     end,
     ft = "dart",
