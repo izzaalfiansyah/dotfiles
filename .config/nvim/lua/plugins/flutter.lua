@@ -22,9 +22,9 @@ return {
           },
         },
         debugger = {
-          enabled = true,
-          run_via_dap = true,
-          flutter_path = "flutter", -- Jika flutter tidak ada di PATH, beri path absolut
+          enabled = false,
+          run_via_dap = false,
+          flutter_path = "flutter", -- absolute path if flutter not detected
         },
       })
 
@@ -42,9 +42,9 @@ return {
   {
     "RobertPietraru/bloc.nvim",
     dependencies = {
-      "nvim-lua/plenary.nvim", -- pastikan dependensi terpenuhi
+      "nvim-lua/plenary.nvim",
     },
-    ft = { "dart" }, -- hanya aktif di file dart
+    ft = { "dart" }, -- just active on dart file
     config = function()
       require("bloc").setup()
 
