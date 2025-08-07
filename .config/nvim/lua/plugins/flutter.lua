@@ -10,10 +10,16 @@ return {
     config = function()
       require("flutter-tools").setup({
         lsp = {
+          color = {
+            enabled = true,
+            background = true,
+            foreground = true,
+          },
           cmd = { "dart", "language-server", "--protocol=lsp" },
         },
         ui = {
           border = "rounded",
+          notification_style = "native",
         },
         decorations = {
           statusline = {

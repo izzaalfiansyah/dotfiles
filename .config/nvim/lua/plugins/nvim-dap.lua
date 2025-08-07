@@ -6,7 +6,6 @@ return {
 
     dependencies = {
       "rcarriga/nvim-dap-ui",
-      -- virtual text for the debugger
       {
         "theHamsta/nvim-dap-virtual-text",
         opts = {},
@@ -57,17 +56,5 @@ return {
         return vim.json.decode(json.json_strip_comments(str))
       end
     end,
-  },
-  {
-    "rcarriga/nvim-dap-ui",
-    -- virtual text for the debugger
-    {
-      "theHamsta/nvim-dap-virtual-text",
-      opts = {},
-    },
-  },
-  {
-    "theHamsta/nvim-dap-virtual-text",
-    opts = {},
   },
 }
