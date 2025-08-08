@@ -10,7 +10,7 @@ return {
     name = "catppuccin",
     lazy = false,
     opts = {
-      flavour = "macchiato", -- latte, frappe, macchiato, mocha
+      flavour = "mocha", -- latte, frappe, macchiato, mocha
       background = {
         light = "latte",
         dark = "mocha",

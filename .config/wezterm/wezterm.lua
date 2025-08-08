@@ -1,7 +1,7 @@
 local wezterm = require("wezterm")
 
 local config = wezterm.config_builder()
-local scheme = "Catppuccin Macchiato"
+local scheme = "Catppuccin Mocha"
 local tabline = wezterm.plugin.require("https://github.com/michaelbrusegard/tabline.wez")
 
 config.color_scheme = scheme
