@@ -19,8 +19,8 @@ vim.keymap.set("i", "jk", "<Esc>", { desc = "Exit insert mode with jk" })
 vim.keymap.set("t", "<Esc>", [[<C-\><C-n>]], { desc = "Exit terminal mode with qq", noremap = true, silent = true })
 
 -- Keymap for set attribute from object and set array on php
-vim.keymap.set("i", ",,", "->", { desc = "Type -> in insert mode", noremap = true })
-vim.keymap.set("i", ";;", "=>", { desc = "Type => in insert mode", noremap = true })
+-- vim.keymap.set("i", ",,", "->", { desc = "Type -> in insert mode", noremap = true })
+-- vim.keymap.set("i", ";;", "=>", { desc = "Type => in insert mode", noremap = true })
 
 -- Selection
 vim.keymap.set("n", "<C-a>", "ggVG")
