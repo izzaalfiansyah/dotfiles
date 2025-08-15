@@ -29,6 +29,7 @@ return {
       "markdown",
       "markdown_inline",
       "yaml",
+      "dart",
       -- "http",
       -- "graphlql",
       -- "prettier",
@@ -38,6 +39,10 @@ return {
     },
   },
   config = function(_, opts)
+    opts.indent = {
+      enable = true,
+    }
+
     require("nvim-treesitter.configs").setup(opts)
 
     require("nvim-ts-autotag").setup({
