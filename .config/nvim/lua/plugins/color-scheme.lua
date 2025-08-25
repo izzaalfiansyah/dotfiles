@@ -2,9 +2,10 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin",
+      colorscheme = "gruvbox",
     },
   },
+  { "ellisonleao/gruvbox.nvim", priority = 1000, config = true },
   {
     "catppuccin/nvim",
     name = "catppuccin",
@@ -18,17 +19,16 @@ return {
       transparent_background = true,
     },
   },
-  -- {
-  --   "folke/tokyonight.nvim",
-  --   enable = false,
-  --   lazy = false,
-  --   opts = {
-  --     style = "night",
-  --     transparent = true,
-  --     styles = {
-  --       sidebars = "transparent",
-  --       floats = "transparent",
-  --     },
-  --   },
-  -- },
+  {
+    "folke/tokyonight.nvim",
+    lazy = false,
+    opts = {
+      style = "night",
+      transparent = true,
+      styles = {
+        sidebars = "transparent",
+        floats = "transparent",
+      },
+    },
+  },
 }

@@ -22,6 +22,7 @@ return {
       "typescript-language-server",
       "js-debug-adapter",
       "sqlfluff",
+      "css-lsp",
     },
   },
 }
