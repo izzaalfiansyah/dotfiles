@@ -6,3 +6,5 @@
 !.config/**/*
 !walls/
 !walls/**/*
+!.warp/
+!.warp/**/*
