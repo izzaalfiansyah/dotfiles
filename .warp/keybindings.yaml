@@ -1,12 +1,14 @@
 ---
 "pane_group:resize_up": shift-cmd-K
 "pane_group:navigate_right": alt-l
-"pane_group:add_down": shift-cmd-_
-"pane_group:add_right": shift-cmd-|
+"editor_view:clear_lines": none
 "pane_group:resize_left": shift-cmd-H
+"editor_view:select_previous_command": cmd-up
+"pane_group:add_right": shift-cmd-|
+"pane_group:resize_down": shift-cmd-J
+"pane_group:add_down": shift-cmd-_
+"pane_group:navigate_left": alt-h
 "pane_group:navigate_down": alt-j
 "pane_group:navigate_up": alt-k
-"pane_group:resize_down": shift-cmd-J
+"workspace:toggle_ai_assistant": none
 "pane_group:resize_right": shift-cmd-L
-"pane_group:navigate_left": alt-h
-"editor_view:clear_lines": none
