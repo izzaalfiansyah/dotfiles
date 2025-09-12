@@ -8,6 +8,12 @@ return {
   { "ellisonleao/gruvbox.nvim", priority = 1000, config = true },
   {
     "catppuccin/nvim",
+    init = function()
+      local bufline = require("catppuccin.groups.integrations.bufferline")
+      function bufline.get()
+        return bufline.get_theme()
+      end
+    end,
     name = "catppuccin",
     lazy = false,
     opts = {
