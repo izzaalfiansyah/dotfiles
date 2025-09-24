@@ -2,7 +2,7 @@ local opts = { noremap = true, silent = true }
 
 -- Exit from a mode
 vim.keymap.set("i", "jk", "<Esc>", { desc = "Exit insert mode with jk" })
-vim.keymap.set("t", "<Esc>", [[<C-\><C-n>]], { desc = "Exit terminal mode with qq", noremap = true, silent = true })
+vim.keymap.set("t", "<Esc>", [[<C-\><C-n>]], { desc = "Exit terminal mode with esc", noremap = true, silent = true })
 
 -- Selection
 vim.keymap.set("n", "<C-a>", "ggVG")
