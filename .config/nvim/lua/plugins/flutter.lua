@@ -28,7 +28,7 @@ return {
           },
         },
         debugger = {
-          enabled = false,
+          enabled = true,
           run_via_dap = false,
           flutter_path = "flutter", -- absolute path if flutter not detected
         },
