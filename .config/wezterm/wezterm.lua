@@ -1,7 +1,7 @@
 local wezterm = require("wezterm")
 
 local config = wezterm.config_builder()
-local scheme = "Catppuccin Mocha"
+local scheme = "Gruvbox Dark"
 local tabline = wezterm.plugin.require("https://github.com/michaelbrusegard/tabline.wez")
 
 config.color_scheme = scheme

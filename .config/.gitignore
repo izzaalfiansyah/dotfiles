@@ -20,3 +20,5 @@
 !wezterm/**/*
 !borders/
 !borders/**/*
+!ghostty/
+!ghostty/**/*
