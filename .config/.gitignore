@@ -11,7 +11,7 @@
 !skhd/
 !skhd/**/*
 !fish/
-!fish/**/*
+!fish/config.fish
 !zellij/
 !zellij/**/*
 !fastfetch/
