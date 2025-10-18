@@ -1,0 +1,144 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "agent": {
+    "default_model": {
+      "provider": "OpenCode Zen",
+      "model": "grok-code"
+    },
+    "model_parameters": []
+  },
+  "language_models": {
+    "openai_compatible": {
+      "OpenCode Zen": {
+        "api_url": "https://opencode.ai/zen/v1",
+        "available_models": [
+          {
+            "name": "grok-code",
+            "display_name": "Grok Code Fast 1",
+            "max_tokens": 256000,
+            "max_output_tokens": 256000,
+            "max_completion_tokens": 256000,
+            "capabilities": {
+              "tools": true,
+              "images": false,
+              "parallel_tool_calls": false,
+              "prompt_cache_key": false
+            }
+          },
+          {
+            "name": "big-pickle",
+            "display_name": "Big Pickle",
+            "max_tokens": 200000,
+            "max_output_tokens": 128000,
+            "max_completion_tokens": 200000,
+            "capabilities": {
+              "tools": true,
+              "images": false,
+              "parallel_tool_calls": false,
+              "prompt_cache_key": false
+            }
+          },
+          {
+            "name": "code-supernova",
+            "display_name": "Code Supernova 1M",
+            "max_tokens": 1000000,
+            "max_output_tokens": 1000000,
+            "max_completion_tokens": 1000000,
+            "capabilities": {
+              "tools": true,
+              "images": true,
+              "parallel_tool_calls": false,
+              "prompt_cache_key": false
+            }
+          }
+        ]
+      }
+    }
+  },
+  "theme": {
+    "mode": "system",
+    "light": "Github Light",
+    "dark": "Github Dark"
+  },
+  "project_panel": {
+    "scrollbar": {
+      "show": "auto"
+    },
+    "sticky_scroll": true,
+    "indent_size": 18.0,
+    "entry_spacing": "standard",
+    "hide_gitignore": false,
+    "default_width": 240.0
+  },
+  "tabs": {
+    "file_icons": true,
+    "git_status": false
+  },
+  "tab_bar": {
+    "show_nav_history_buttons": false,
+    "show": true
+  },
+  "title_bar": {
+    "show_user_picture": true,
+    "show_branch_icon": true
+  },
+  "diagnostics": {
+    "inline": {
+      "enabled": true
+    }
+  },
+  "inlay_hints": {
+    "enabled": true
+  },
+  "relative_line_numbers": false,
+  "hide_mouse": "on_typing",
+  "agent_buffer_font_size": 12.0,
+  "buffer_font_weight": 400.0,
+  "use_system_path_prompts": true,
+  "when_closing_with_no_tabs": "platform_default",
+  "confirm_quit": true,
+  "icon_theme": "Catppuccin Macchiato",
+  "vim_mode": true,
+  "terminal": {
+    "dock": "bottom",
+    "font_size": 11.5
+  },
+  "telemetry": {
+    "diagnostics": true,
+    "metrics": true
+  },
+  "minimap": {
+    "show": "never"
+  },
+  "cursor_blink": true,
+  "file_types": {},
+  "indent_guides": {
+    "enabled": false
+  },
+  "soft_wrap": "editor_width",
+  "base_keymap": "VSCode",
+  "ui_font_size": 12.5,
+  "buffer_font_size": 11.5,
+  "ui_font_family": "JetBrainsMonoNL Nerd Font Mono",
+  "buffer_font_family": "JetBrainsMonoNL Nerd Font Mono",
+  "auto_install_extensions": {
+    "html": true,
+    "vue": true,
+    "dockerfile": true,
+    "php": true,
+    "scss": true,
+    "github-theme": true,
+    "emmet": true,
+    "gitlab-ci-ls": true
+  },
+  "prettier": {
+    "allowed": true
+  }
+}

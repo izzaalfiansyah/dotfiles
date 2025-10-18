@@ -24,5 +24,6 @@
 !ghostty/**/*
 !btop/
 !btop/**/*
+!zed/
 !zed/keymap.json
 !zed/settings.json
