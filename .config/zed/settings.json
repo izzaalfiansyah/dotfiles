@@ -139,6 +139,7 @@
     "dart": true,
     "blade": true,
     "graphql": true,
+    "toml": true,
     // deployment
     "dockerfile": true,
     "gitlab-ci-ls": true,

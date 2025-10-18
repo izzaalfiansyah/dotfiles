@@ -109,3 +109,5 @@ eval "$(starship init zsh)"
 if [[ -z "$ZELLIJ" && -z "$ZELLIJ_SESSION_NAME" ]]; then
   fastfetch
 fi
+
+. "$HOME/.local/bin/env"
