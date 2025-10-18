@@ -9,6 +9,12 @@
   {
     "context": "Workspace",
     "bindings": {
+      "alt-k": "workspace::ActivatePaneUp",
+      "alt-j": "workspace::ActivatePaneDown",
+      "alt-l": "workspace::ActivatePaneRight",
+      "alt-h": "workspace::ActivatePaneLeft",
+      "alt-\\": "workspace::NewFileSplitVertical",
+      "alt--": "workspace::NewFileSplitHorizontal"
       // "shift shift": "file_finder::Toggle"
     }
   },
