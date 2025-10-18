@@ -143,7 +143,9 @@
     "gitlab-ci-ls": true,
     // theme
     "github-theme": true,
-    "jetbrains-icons": true
+    "jetbrains-icons": true,
+    // git
+    "git-firefly": true
   },
   "prettier": {
     "allowed": true

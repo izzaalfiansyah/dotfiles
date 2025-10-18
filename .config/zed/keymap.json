@@ -17,5 +17,19 @@
     "bindings": {
       "j k": "vim::NormalBefore"
     }
+  },
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      "] e": "editor::GoToDiagnostic",
+      "[ e": "editor::GoToPreviousDiagnostic",
+      "space g g": [
+        "task::Spawn",
+        {
+          "task_name": "start lazygit",
+          "reveal_target": "center"
+        }
+      ]
+    }
   }
 ]
