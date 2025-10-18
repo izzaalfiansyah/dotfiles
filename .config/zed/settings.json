@@ -104,7 +104,7 @@
   "use_system_path_prompts": true,
   "when_closing_with_no_tabs": "platform_default",
   "confirm_quit": true,
-  "icon_theme": "Catppuccin Macchiato",
+  "icon_theme": "JetBrains Icons Dark",
   "vim_mode": true,
   "terminal": {
     "dock": "bottom",
@@ -129,14 +129,21 @@
   "ui_font_family": "JetBrainsMonoNL Nerd Font Mono",
   "buffer_font_family": "JetBrainsMonoNL Nerd Font Mono",
   "auto_install_extensions": {
+    // lsp
     "html": true,
     "vue": true,
-    "dockerfile": true,
     "php": true,
     "scss": true,
-    "github-theme": true,
     "emmet": true,
-    "gitlab-ci-ls": true
+    "dart": true,
+    "blade": true,
+    "graphql": true,
+    // deployment
+    "dockerfile": true,
+    "gitlab-ci-ls": true,
+    // theme
+    "github-theme": true,
+    "jetbrains-icons": true
   },
   "prettier": {
     "allowed": true
