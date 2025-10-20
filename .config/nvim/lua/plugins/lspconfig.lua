@@ -4,6 +4,9 @@ local ruff = vim.g.lazyvim_python_ruff or "ruff"
 return {
   "neovim/nvim-lspconfig",
   opts = {
+    inlay_hints = {
+      enabled = false,
+    },
     servers = {
       -- emmet_ls = {
       --   filetypes = {
