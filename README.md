@@ -37,8 +37,12 @@ This repository contains my personal dotfiles configuration for various tools an
 - **Ripgrep**: Fast text search tool.
 - **Bat**: Cat clone with syntax highlighting.
 - **FZF**: Fuzzy finder for command-line.
+- **Fd**: Simple, fast and user-friendly alternative to find.
 - **LazyDocker**: Simple terminal UI for Docker.
 - **Podman**: Daemonless container engine.
+- **Yazi**: Blazing fast terminal file manager written in Rust.
+- **Cloudflared**: Tool for creating secure tunnels to Cloudflare's edge.
+- **Vercel**: Platform for deploying web applications with serverless functions.
 
 ### Version Control
 
@@ -48,6 +52,11 @@ This repository contains my personal dotfiles configuration for various tools an
 
 - SSH client configuration in `.ssh/config`.
 - **LazySSH**: SSH management tool.
+
+### Browsers
+
+- **Firefox**: Open-source web browser with extensive customization and privacy features.
+- **Zen**: Privacy-focused browser built on Firefox, emphasizing user privacy and minimalism.
 
 ### Miscellaneous
 
