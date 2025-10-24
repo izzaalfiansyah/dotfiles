@@ -11,6 +11,3 @@ fnm env --use-on-cd --shell fish | source
 
 alias ff=fastfetch
 alias zq="zellij kill-all-sessions"
-
-# other tools
-# bat, lazygit, lazyssh, ripgrep, zellij, atuin, starship
