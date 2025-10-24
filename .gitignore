@@ -8,6 +8,8 @@
 !walls/**/*
 !.warp/
 !.warp/**/*
+!.ssh/
+!.ssh/config
 
 # FVM Version Cache
 .fvm/
