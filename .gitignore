@@ -8,8 +8,6 @@
 !walls/**/*
 !.warp/
 !.warp/**/*
-!.ssh/
-!.ssh/config
 !README.md
 
 # FVM Version Cache
