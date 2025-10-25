@@ -8,6 +8,7 @@
 !walls/**/*
 !.warp/
 !.warp/**/*
+!README.md
 
 # FVM Version Cache
 .fvm/

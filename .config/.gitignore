@@ -28,3 +28,5 @@
 !zed/keymap.json
 !zed/settings.json
 !zed/tasks.json
+!atuin/
+!atuin/config.toml

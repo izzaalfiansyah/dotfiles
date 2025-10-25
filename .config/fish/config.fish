@@ -6,6 +6,7 @@ if status is-interactive
 end
 
 starship init fish | source
+atuin init fish | source
 fnm env --use-on-cd --shell fish | source
 
 alias ff=fastfetch

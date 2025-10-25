@@ -111,3 +111,7 @@ if [[ -z "$ZELLIJ" && -z "$ZELLIJ_SESSION_NAME" ]]; then
 fi
 
 . "$HOME/.local/bin/env"
+
+. "$HOME/.atuin/bin/env"
+
+eval "$(atuin init zsh)"
