@@ -96,7 +96,7 @@
     }
   },
   "inlay_hints": {
-    "enabled": true
+    "enabled": false
   },
   "relative_line_numbers": false,
   "hide_mouse": "on_typing",
