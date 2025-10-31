@@ -9,5 +9,5 @@ starship init fish | source
 atuin init fish | source
 fnm env --use-on-cd --shell fish | source
 
-alias ff=fastfetch
+alias ls="eza --icons"
 alias zq="zellij kill-all-sessions"
