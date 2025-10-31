@@ -38,6 +38,7 @@ This repository contains my personal dotfiles configuration for various tools an
 - **[Bat](https://github.com/sharkdp/bat)**: Cat clone with syntax highlighting.
 - **[FZF](https://github.com/junegunn/fzf)**: Fuzzy finder for command-line.
 - **[Fd](https://github.com/sharkdp/fd)**: Simple, fast and user-friendly alternative to find.
+- **[Eza](https://eza.rocks)**: A modern replacement for `ls`, written in Rust.
 - **[LazyDocker](https://github.com/jesseduffield/lazydocker)**: Simple terminal UI for Docker.
 - **[Podman](https://podman.io/)**: Daemonless container engine.
 - **[Yazi](https://yazi-rs.github.io/)**: Blazing fast terminal file manager written in Rust.
