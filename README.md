@@ -44,6 +44,7 @@ This repository contains my personal dotfiles configuration for various tools an
 - **[Yazi](https://yazi-rs.github.io/)**: Blazing fast terminal file manager written in Rust.
 - **[Cloudflared](https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/install-and-setup/tunnel-guide/)**: Tool for creating secure tunnels to Cloudflare's edge.
 - **[Vercel](https://vercel.com/)**: Platform for deploying web applications with serverless functions.
+- **[GNU Stow](https://www.gnu.org/software/stow/)**: Symlink farm manager for managing dotfiles.
 
 ### Version Control
 
