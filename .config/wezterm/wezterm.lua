@@ -8,6 +8,7 @@ config.color_scheme = scheme
 
 config.font_size = 12
 config.font = wezterm.font_with_fallback({
+	{ family = "Iosevka Term", weight = "DemiBold" },
 	{ family = "JetBrainsMonoNL Nerd Font Mono", weight = "DemiBold" },
 	{ family = "Hack Nerd Font", weight = "DemiBold" },
 	{ family = "Fira Code", weight = "DemiBold" },

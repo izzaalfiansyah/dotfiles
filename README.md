@@ -16,6 +16,13 @@ This repository contains my personal dotfiles configuration for various tools an
 - **[Ghostty](https://ghostty.org/)**: Modern terminal emulator with configuration in `.config/ghostty/`.
 - **[Warp](https://warp.dev/)**: Collaborative terminal with themes and keybindings in `.warp/`.
 
+### Fonts
+
+- **[Iosevka Term](https://typeof.net/Iosevka/)**: Customizable monospace font used in terminal emulators.
+- **[JetBrains Mono NL](https://www.jetbrains.com/lp/mono/)**: Monospace font without ligatures, optimized for coding.
+- **[Hack Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Hack)**: Hack font with Nerd Font icons.
+- **[Fira Code](https://github.com/tonsky/FiraCode)**: Monospace font with programming ligatures.
+
 ### Text Editors/IDEs
 
 - **[Neovim](https://neovim.io/)**: Highly configurable text editor with [LazyVim](https://www.lazyvim.org/) distribution and Lua-based configuration in `.config/nvim/`, including plugins for LSP, treesitter, completion, and more.
