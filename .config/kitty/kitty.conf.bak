@@ -1317,7 +1317,7 @@ hide_window_decorations titlebar-only
 
 #: The foreground and background colors.
 
-background_opacity 0.75
+background_opacity 0.8
 
 #: The opacity of the background. A number between zero and one, where
 #: one is opaque and zero is fully transparent. This will only work if
@@ -2795,6 +2795,6 @@ mouse_map ctrl+left press ungrabbed,grabbed mouse_click_url
 cursor_trail 1
 
 # BEGIN_KITTY_THEME
-# Gruvbox Dark
+# GitHub Dark
 include current-theme.conf
 # END_KITTY_THEME
