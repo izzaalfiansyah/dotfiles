@@ -42,6 +42,7 @@ This repository contains my personal dotfiles configuration for various tools an
 - **[Atuin](https://atuin.sh/)**: Shell history tool with configuration in `.config/atuin/`.
 - **[Zellij](https://zellij.dev/)**: Terminal multiplexer with configuration in `.config/zellij/`.
 - **[Ripgrep](https://github.com/BurntSushi/ripgrep)**: Fast text search tool.
+- **[Zoxide](https://github.com/ajeetdsouza/zoxide)**: Smarter cd command for faster directory navigation.
 - **[Bat](https://github.com/sharkdp/bat)**: Cat clone with syntax highlighting.
 - **[FZF](https://github.com/junegunn/fzf)**: Fuzzy finder for command-line.
 - **[Fd](https://github.com/sharkdp/fd)**: Simple, fast and user-friendly alternative to find.
