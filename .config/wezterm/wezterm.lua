@@ -6,7 +6,7 @@ local tabline = wezterm.plugin.require("https://github.com/michaelbrusegard/tabl
 
 config.color_scheme = scheme
 
-config.font_size = 12
+config.font_size = 13
 config.font = wezterm.font_with_fallback({
 	{ family = "Iosevka Term", weight = "DemiBold" },
 	{ family = "JetBrainsMonoNL Nerd Font Mono", weight = "DemiBold" },
@@ -15,6 +15,7 @@ config.font = wezterm.font_with_fallback({
 })
 
 config.window_decorations = "RESIZE"
+config.default_cwd = wezterm.home_dir
 
 config.window_background_opacity = 0.8
 config.macos_window_background_blur = 15
@@ -77,64 +78,64 @@ config.mouse_bindings = {
 	},
 }
 
--- config.keys = {
--- 	-- Split pane horizontal
--- 	{
--- 		key = "|",
--- 		mods = "ALT|SHIFT",
--- 		action = wezterm.action.SplitHorizontal({ domain = "CurrentPaneDomain" }),
--- 	},
---
--- 	-- Split pane vertical
--- 	{
--- 		key = "_",
--- 		mods = "ALT|SHIFT",
--- 		action = wezterm.action.SplitVertical({ domain = "CurrentPaneDomain" }),
--- 	},
---
--- 	-- Move between panes
--- 	{
--- 		key = "h",
--- 		mods = "ALT",
--- 		action = wezterm.action.ActivatePaneDirection("Left"),
--- 	},
--- 	{
--- 		key = "l",
--- 		mods = "ALT",
--- 		action = wezterm.action.ActivatePaneDirection("Right"),
--- 	},
--- 	{
--- 		key = "k",
--- 		mods = "ALT",
--- 		action = wezterm.action.ActivatePaneDirection("Up"),
--- 	},
--- 	{
--- 		key = "j",
--- 		mods = "ALT",
--- 		action = wezterm.action.ActivatePaneDirection("Down"),
--- 	},
---
--- 	-- Resizing panes (need to stop skhd)
--- 	{
--- 		key = "h",
--- 		mods = "ALT|SHIFT",
--- 		action = wezterm.action.AdjustPaneSize({ "Left", 2 }),
--- 	},
--- 	{
--- 		key = "l",
--- 		mods = "ALT|SHIFT",
--- 		action = wezterm.action.AdjustPaneSize({ "Right", 2 }),
--- 	},
--- 	{
--- 		key = "k",
--- 		mods = "ALT|SHIFT",
--- 		action = wezterm.action.AdjustPaneSize({ "Up", 1 }),
--- 	},
--- 	{
--- 		key = "j",
--- 		mods = "ALT|SHIFT",
--- 		action = wezterm.action.AdjustPaneSize({ "Down", 1 }),
--- 	},
--- }
+config.keys = {
+	-- Split pane horizontal
+	{
+		key = "|",
+		mods = "ALT|SHIFT",
+		action = wezterm.action.SplitHorizontal({ domain = "CurrentPaneDomain" }),
+	},
+
+	-- Split pane vertical
+	{
+		key = "_",
+		mods = "ALT|SHIFT",
+		action = wezterm.action.SplitVertical({ domain = "CurrentPaneDomain" }),
+	},
+
+	-- Move between panes
+	{
+		key = "LeftArrow",
+		mods = "ALT",
+		action = wezterm.action.ActivatePaneDirection("Left"),
+	},
+	{
+		key = "RightArrow",
+		mods = "ALT",
+		action = wezterm.action.ActivatePaneDirection("Right"),
+	},
+	{
+		key = "UpArrow",
+		mods = "ALT",
+		action = wezterm.action.ActivatePaneDirection("Up"),
+	},
+	{
+		key = "DownArrow",
+		mods = "ALT",
+		action = wezterm.action.ActivatePaneDirection("Down"),
+	},
+
+	-- Resizing panes
+	{
+		key = "LeftArrow",
+		mods = "ALT|SHIFT",
+		action = wezterm.action.AdjustPaneSize({ "Left", 2 }),
+	},
+	{
+		key = "RightArrow",
+		mods = "ALT|SHIFT",
+		action = wezterm.action.AdjustPaneSize({ "Right", 2 }),
+	},
+	{
+		key = "UpArrow",
+		mods = "ALT|SHIFT",
+		action = wezterm.action.AdjustPaneSize({ "Up", 1 }),
+	},
+	{
+		key = "DownArrow",
+		mods = "ALT|SHIFT",
+		action = wezterm.action.AdjustPaneSize({ "Down", 1 }),
+	},
+}
 
 return config
