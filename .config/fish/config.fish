@@ -12,3 +12,4 @@ fnm env --use-on-cd --shell fish | source
 
 alias ls="eza --icons"
 alias zq="zellij kill-all-sessions"
+alias cd="z"
