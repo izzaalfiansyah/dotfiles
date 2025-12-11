@@ -8,6 +8,15 @@
         "-y",
         "@modelcontextprotocol/server-sequential-thinking"
       ]
+    },
+    "mcp_exa": {
+      "type": "local",
+      "command": [
+        "bunx",
+        "-y",
+        "exa-mcp-server",
+        "tools=web_search_exa,get_code_context_exa,crawling_exa"
+      ]
     }
   }
 }
