@@ -17,6 +17,20 @@
         "exa-mcp-server",
         "tools=web_search_exa,get_code_context_exa,crawling_exa"
       ]
+    },
+    "mcp_github": {
+      "type": "remote",
+      "url": "https://api.githubcopilot.com/mcp/",
+      "headers": {
+        "Authorization": "Bearer {file:~/.config/opencode/.secret/github_token}"
+      }
+    },
+    "mcp_notion": {
+      "type": "local",
+      "command": ["bunx", "-y", "@notionhq/notion-mcp-server"],
+      "environment": {
+        "NOTION_TOKEN": "{file:~/.config/opencode/.secret/notion_token}"
+      }
     }
   }
 }
