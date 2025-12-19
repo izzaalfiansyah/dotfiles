@@ -1,5 +1,6 @@
 {
   "$schema": "https://opencode.ai/config.json",
+  "theme": "system",
   "mcp": {
     "mcp_sequential_thinking": {
       "type": "local",
