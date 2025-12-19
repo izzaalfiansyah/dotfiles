@@ -32,5 +32,18 @@
         "NOTION_TOKEN": "{file:~/.config/opencode/.secret/notion_token}"
       }
     }
+  },
+  "provider": {
+    "proxy-api": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Proxy API",
+      "options": {
+        "baseURL": "http://127.0.0.1:8317/v1",
+        "apiKey": "ak-JDztG8H0ew6QNMbgauHMnCYQ7MQWxntH",
+        "headers": {
+          "Authorization": "Bearer ak-JDztG8H0ew6QNMbgauHMnCYQ7MQWxntH"
+        }
+      }
+    }
   }
 }
