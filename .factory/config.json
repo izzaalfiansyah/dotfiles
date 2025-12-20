@@ -1,0 +1,52 @@
+{
+  "custom_models": [
+    {
+      "model_display_name": "Gemini 3 Flash Preview [Antigravity]",
+      "model": "gemini-3-flash-preview",
+      "base_url": "http://localhost:8317/v1",
+      "api_key": "ak-JDztG8H0ew6QNMbgauHMnCYQ7MQWxntH",
+      "provider": "open-proxy",
+      "max_tokens": 128000
+    },
+    {
+      "model_display_name": "Gemini 3 Pro Preview [Antigravity]",
+      "model": "gemini-3-pro-preview",
+      "base_url": "http://localhost:8317/v1",
+      "api_key": "ak-JDztG8H0ew6QNMbgauHMnCYQ7MQWxntH",
+      "provider": "open-proxy",
+      "max_tokens": 128000
+    },
+    {
+      "model_display_name": "Gemini Claude Sonnet 4.5 [Antigravity]",
+      "model": "gemini-claude-sonnet-4-5",
+      "base_url": "http://localhost:8317/v1",
+      "api_key": "ak-JDztG8H0ew6QNMbgauHMnCYQ7MQWxntH",
+      "provider": "open-proxy",
+      "max_tokens": 128000
+    },
+    {
+      "model_display_name": "Gemini Claude Sonnet 4.5 Thinking [Antigravity]",
+      "model": "gemini-claude-sonnet-4-5-thinking",
+      "base_url": "http://localhost:8317/v1",
+      "api_key": "ak-JDztG8H0ew6QNMbgauHMnCYQ7MQWxntH",
+      "provider": "open-proxy",
+      "max_tokens": 128000
+    },
+    {
+      "model_display_name": "Gemini Claude Opus 4.5 Thinking [Antigravity]",
+      "model": "gemini-claude-opus-4-5-thinking",
+      "base_url": "http://localhost:8317/v1",
+      "api_key": "ak-JDztG8H0ew6QNMbgauHMnCYQ7MQWxntH",
+      "provider": "open-proxy",
+      "max_tokens": 128000
+    },
+    {
+      "model_display_name": "GPT OSS 120b Medium [Antigravity]",
+      "model": "gpt-oss-120b-medium",
+      "base_url": "http://localhost:8317/v1",
+      "api_key": "ak-JDztG8H0ew6QNMbgauHMnCYQ7MQWxntH",
+      "provider": "open-proxy",
+      "max_tokens": 128000
+    }
+  ]
+}

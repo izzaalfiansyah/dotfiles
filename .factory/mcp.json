@@ -1,0 +1,20 @@
+{
+  "mcpServers": {
+    "mcp_sequential_thinking": {
+      "type": "stdio",
+      "command": "bunx",
+      "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"]
+    },
+    "playwright": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@playwright/mcp@latest"],
+      "disabled": false
+    },
+    "mcp_exa": {
+      "type": "stdio",
+      "command": "bunx",
+      "args": ["-y", "exa-mcp-server", "tools=web_search_exa,get_code_context_exa,crawling_exa"]
+    }
+  }
+}

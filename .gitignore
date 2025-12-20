@@ -9,6 +9,8 @@
 !.warp/
 !.warp/**/*
 !README.md
+!.factory/
+!.factory/**/*
 
 # FVM Version Cache
 .fvm/
