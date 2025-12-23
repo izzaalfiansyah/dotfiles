@@ -9,8 +9,8 @@ font-synthetic-style = true
 
 shell-integration = fish
 
-background-opacity = 0.85
-background-blur = 15
+background-opacity = 0.75
+background-blur = 35
 
 term = xterm-256color
 
