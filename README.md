@@ -58,13 +58,9 @@ This repository contains my personal dotfiles configuration for various tools an
 
 - **[Git](https://git-scm.com/)**: Version control system with global configuration in `.gitconfig`.
 
-### SSH
-
-- SSH client configuration in `.ssh/config`.
-- **[LazySSH](https://github.com/MohamedElashri/lazyssh)**: SSH management tool.
-
 ### Browsers
 
+- **[Vivaldi](https://vivaldi.com/)**: My primary browser with custom CSS configuration in `.config/vivaldi/vivalarc.css`.
 - **[Firefox](https://www.mozilla.org/en-US/firefox/)**: Open-source web browser with extensive customization and privacy features.
 - **[Zen](https://zen-browser.app/)**: Privacy-focused browser built on Firefox, emphasizing user privacy and minimalism.
 
@@ -72,4 +68,3 @@ This repository contains my personal dotfiles configuration for various tools an
 
 - **[Starship](https://starship.rs/)**: Cross-shell prompt with configuration in `starship.toml`.
 - **[OpenCode](https://opencode.ai/)**: AI-powered coding assistant.
-- Wallpapers stored in `walls/`.
