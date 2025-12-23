@@ -12,7 +12,6 @@ return {
       -- "phpcs",
       "pint",
       "prettier",
-      "prisma-language-server",
       "quick-lint-js",
       "rustywind",
       "shfmt",
