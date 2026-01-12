@@ -22,11 +22,6 @@ return {
           "php",
           "blade",
         },
-        init_options = {
-          showAbbreviationSuggestions = true,
-          showExpandedAbbreviation = "always",
-          showSuggestionsAsSnippets = true,
-        },
       },
       tailwindcss = {
         filetypes_exclude = { "markdown" },
