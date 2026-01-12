@@ -17,5 +17,18 @@ return {
         codeium = { name = "Codeium", module = "codeium.blink", async = true },
       },
     },
+    fuzzy = {
+      sorts = {
+        function(a, b)
+          if (a.client_name == nil or b.client_name == nil) or (a.client_name == b.client_name) then
+            return
+          end
+
+          return b.client_name == "emmet_language_server"
+        end,
+        "score",
+        "sort_text",
+      },
+    },
   },
 }
