@@ -1,0 +1,58 @@
+# Template for providers.yaml
+#
+# You can add any OpenAI API compatible provider to the "providers" list.
+# For each provider you must also specify a list of models, along with model abilities.
+#
+# All fields are required unless marked as optional.
+#
+# Refer to your provider's API documentation for specific
+# details such as model identifiers, capabilities etc
+#
+# Note: Since the OpenAI API is not a standard we can't guarantee that all
+# providers will work correctly with Raycast AI.
+#
+# To use this template rename as `providers.yaml`
+#
+providers:
+  - id: cliproxyapi
+    name: CLI Proxy API
+    base_url: http://localhost:8317/v1
+    api_keys:
+      api_key: ak-12345678
+    models:
+      - id: gemini-3-flash-preview
+        name: "Gemini 3 Flash Preview"
+        context: 200000
+        abilities:
+          temperature:
+            supported: true
+          vision:
+            supported: true
+          system_message:
+            supported: true
+          tools:
+            supported: true
+      - id: gemini-3-pro-preview
+        name: "Gemini 3 Pro Preview"
+        context: 200000
+        abilities:
+          temperature:
+            supported: true
+          vision:
+            supported: true
+          system_message:
+            supported: true
+          tools:
+            supported: true
+      - id: gemini-2.5-flash-lite
+        name: "Gemini 2.5 Flash Lite"
+        context: 200000
+        abilities:
+          temperature:
+            supported: true
+          vision:
+            supported: true
+          system_message:
+            supported: true
+          tools:
+            supported: true
