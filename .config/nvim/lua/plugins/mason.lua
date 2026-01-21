@@ -11,7 +11,6 @@ return {
       "lua-language-server",
       -- "phpcs",
       "pint",
-      "prettier",
       "quick-lint-js",
       "rustywind",
       "shfmt",
