@@ -3,26 +3,26 @@
 	"google_auth": false,
 	"disabled_mcps": ["websearch_exa"],
 	"agents": {
-		"Sisyphus": {
-			"model": "opencode/grok-code"
+		"sisyphus": {
+			"model": "google/antigravity-gemini-3-pro"
 		},
 		"librarian": {
-			"model": "opencode/big-pickle"
+			"model": "antigravity-gemini-3-flash"
 		},
 		"explore": {
-			"model": "opencode/big-pickle"
+			"model": "antigravity-gemini-3-flash"
 		},
 		"oracle": {
-			"model": "opencode/big-pickle"
+			"model": "google/antigravity-gemini-3-pro"
 		},
 		"frontend-ui-ux-engineer": {
-			"model": "opencode/grok-code"
+			"model": "google/antigravity-gemini-3-pro"
 		},
 		"document-writer": {
-			"model": "opencode/big-pickle"
+			"model": "antigravity-gemini-3-flash"
 		},
 		"multimodal-looker": {
-			"model": "opencode/big-pickle"
+			"model": "antigravity-gemini-3-flash"
 		}
 	}
 }
