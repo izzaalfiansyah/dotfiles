@@ -7,132 +7,179 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "show_whitespaces": "selection",
+  "hard_tabs": true,
+  "git_panel": {
+    "tree_view": true,
+    "collapse_untracked_diff": true,
+  },
+  "git": {
+    "inline_blame": {
+      "show_commit_summary": true,
+    },
+  },
+  "helix_mode": false,
+  "agent_servers": {
+    "factory-droid": {
+      "type": "registry",
+    },
+    "opencode": {
+      "type": "registry",
+    },
+  },
+  "context_servers": {
+    "mcp-server-notion": {
+      "enabled": true,
+      "remote": false,
+      "settings": {
+        "notion_token": "",
+      },
+    },
+    "mcp-server-github": {
+      "enabled": true,
+      "remote": false,
+      "settings": {
+        "github_personal_access_token": "",
+      },
+    },
+    "mcp-server-gitlab": {
+      "enabled": true,
+      "remote": false,
+      "settings": {
+        "gitlab_personal_access_token": "",
+      },
+    },
+  },
   "tab_size": 2,
   "agent": {
     "default_model": {
-      "provider": "OpenCode Zen",
-      "model": "grok-code"
+      "provider": "CliProxy",
+      "model": "gemini-3-flash-preview",
     },
-    "model_parameters": []
   },
   "language_models": {
     "openai_compatible": {
-      "OpenCode Zen": {
-        "api_url": "https://opencode.ai/zen/v1",
+      "CliProxy": {
+        "api_url": "http://localhost:8317/v1",
         "available_models": [
           {
-            "name": "grok-code",
-            "display_name": "Grok Code Fast 1",
-            "max_tokens": 256000,
-            "max_output_tokens": 256000,
-            "max_completion_tokens": 256000,
-            "capabilities": {
-              "tools": true,
-              "images": false,
-              "parallel_tool_calls": false,
-              "prompt_cache_key": false
-            }
-          },
-          {
-            "name": "big-pickle",
-            "display_name": "Big Pickle",
+            "name": "gemini-3-flash-preview",
             "max_tokens": 200000,
-            "max_output_tokens": 128000,
+            "max_output_tokens": 32000,
             "max_completion_tokens": 200000,
             "capabilities": {
               "tools": true,
               "images": false,
               "parallel_tool_calls": false,
-              "prompt_cache_key": false
-            }
+              "prompt_cache_key": false,
+              "chat_completions": true,
+            },
           },
           {
-            "name": "code-supernova",
-            "display_name": "Code Supernova 1M",
-            "max_tokens": 1000000,
-            "max_output_tokens": 1000000,
-            "max_completion_tokens": 1000000,
+            "name": "gemini-3-pro-image-preview",
+            "max_tokens": 200000,
+            "max_output_tokens": 32000,
+            "max_completion_tokens": 200000,
             "capabilities": {
               "tools": true,
-              "images": true,
+              "images": false,
               "parallel_tool_calls": false,
-              "prompt_cache_key": false
-            }
-          }
-        ]
-      }
-    }
+              "prompt_cache_key": false,
+              "chat_completions": true,
+            },
+          },
+          {
+            "name": "gemini-2.5-flash",
+            "max_tokens": 200000,
+            "max_output_tokens": 32000,
+            "max_completion_tokens": 200000,
+            "capabilities": {
+              "tools": true,
+              "images": false,
+              "parallel_tool_calls": false,
+              "prompt_cache_key": false,
+              "chat_completions": true,
+            },
+          },
+        ],
+      },
+    },
   },
   "theme": {
     "mode": "system",
-    "light": "Github Light",
-    "dark": "Github Dark"
+    "light": "Catppuccin Latte (Blur)",
+    "dark": "Catppuccin Mocha (Blur)",
   },
   "project_panel": {
+    "hide_hidden": false,
+    "hide_root": false,
+    "folder_icons": true,
     "scrollbar": {
-      "show": "auto"
+      "show": "auto",
     },
     "sticky_scroll": true,
     "indent_size": 18.0,
     "entry_spacing": "standard",
     "hide_gitignore": false,
-    "default_width": 240.0
+    "default_width": 240.0,
   },
   "tabs": {
     "file_icons": true,
-    "git_status": false
+    "git_status": false,
   },
   "tab_bar": {
     "show_nav_history_buttons": false,
-    "show": true
+    "show": true,
   },
   "title_bar": {
     "show_user_picture": true,
-    "show_branch_icon": true
+    "show_branch_icon": true,
   },
   "diagnostics": {
     "inline": {
-      "enabled": true
-    }
+      "enabled": true,
+    },
   },
   "inlay_hints": {
-    "enabled": false
+    "enabled": false,
   },
-  "relative_line_numbers": false,
+  "relative_line_numbers": "disabled",
   "hide_mouse": "on_typing",
   "agent_buffer_font_size": 12.0,
   "buffer_font_weight": 400.0,
   "use_system_path_prompts": true,
   "when_closing_with_no_tabs": "platform_default",
   "confirm_quit": true,
-  "icon_theme": "JetBrains Icons Dark",
+  "icon_theme": "Material Icon Theme",
   "vim_mode": true,
   "terminal": {
-    "dock": "bottom",
-    "font_size": 11.5
+    "option_as_meta": true,
+    "dock": "right",
+    "font_size": 11.5,
   },
   "telemetry": {
     "diagnostics": true,
-    "metrics": true
+    "metrics": true,
   },
   "minimap": {
-    "show": "never"
+    "show": "never",
   },
   "cursor_blink": true,
   "file_types": {},
   "indent_guides": {
-    "enabled": false
+    "enabled": false,
   },
   "soft_wrap": "editor_width",
   "base_keymap": "VSCode",
-  "ui_font_size": 12.5,
-  "buffer_font_size": 11.5,
-  "ui_font_family": "JetBrainsMonoNL Nerd Font Mono",
-  "buffer_font_family": "JetBrainsMonoNL Nerd Font Mono",
+  "ui_font_size": 13.0,
+  "buffer_font_size": 12.0,
+  "ui_font_family": "Iosevka",
+  "buffer_font_family": "Iosevka Term",
   "auto_install_extensions": {
     // lsp
     "html": true,
     "vue": true,
+    "svelte": true,
     "php": true,
     "scss": true,
     "emmet": true,
@@ -140,14 +187,22 @@
     "blade": true,
     "graphql": true,
     "toml": true,
-    // deployment
+    // tools
     "dockerfile": true,
     "gitlab-ci-ls": true,
+    "biome": true,
     // theme
-    "github-theme": true,
-    "jetbrains-icons": true
+    "catppuccin-blur": true,
+    "material-icon-theme": true,
+    // mcp server
+    "mcp-server-context7": true,
+    "mcp-server-github": true,
+    "mcp-server-gitlab": true,
+    "mcp-server-sequential-thinking": true,
+    "mcp-server-exa-search": true,
+    "mcp-server-notion": true,
   },
   "prettier": {
-    "allowed": true
-  }
+    "allowed": true,
+  },
 }
