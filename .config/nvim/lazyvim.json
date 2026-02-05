@@ -25,7 +25,6 @@
     "lazyvim.plugins.extras.ui.alpha",
     "lazyvim.plugins.extras.ui.smear-cursor",
     "lazyvim.plugins.extras.util.dot",
-    "lazyvim.plugins.extras.util.gitui",
     "lazyvim.plugins.extras.util.mini-hipatterns"
   ],
   "install_version": 8,
