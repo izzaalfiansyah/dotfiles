@@ -22,7 +22,7 @@ vim.keymap.set("n", "<leader>sf", function()
 end, { desc = "Change Filetype" })
 
 -- Disable recording typing
-vim.keymap.set("n", "q", "<Nop>", { noremap = true, silent = true })
+vim.keymap.set("n", "q", "<Nop>", opts)
 
 -- Codeium
 vim.keymap.set("n", "<leader>acc", ":Codeium Chat<CR>", { desc = "Codeium Chat" })
@@ -39,3 +39,31 @@ vim.keymap.set("v", "<C-x>", "+d")
 vim.keymap.set("n", "<C-v>", '"+p', opts)
 vim.keymap.set("v", "<C-v>", '"+p', opts)
 vim.keymap.set("i", "<C-v>", "<C-r>+", opts)
+
+-- Open telescope
+vim.keymap.set("n", "<C-p>", LazyVim.pick("files"), opts)
+vim.keymap.set("v", "<C-p>", LazyVim.pick("files"), opts)
+vim.keymap.set("i", "<C-p>", LazyVim.pick("files"), opts)
+
+-- Close buffer
+vim.keymap.set("n", "<C-w>", ":bd<CR>", opts)
+vim.keymap.set("v", "<C-w>", ":bd<CR>", opts)
+vim.keymap.set("i", "<C-w>", ":bd<CR>", opts)
+
+-- Code action
+vim.keymap.set("n", "<C-.>", vim.lsp.buf.code_action, opts)
+vim.keymap.set("v", "<C-.>", vim.lsp.buf.code_action, opts)
+vim.keymap.set("i", "<C-.>", vim.lsp.buf.code_action, opts)
+
+-- Quit
+vim.keymap.set("n", "<C-q>", ":qa<CR>", opts)
+vim.keymap.set("v", "<C-q>", ":qa<CR>", opts)
+vim.keymap.set("i", "<C-q>", ":qa<CR>", opts)
+
+-- Undo & Redo
+vim.keymap.set("n", "<C-z>", ":undo<CR>", opts)
+vim.keymap.set("v", "<C-z>", ":undo<CR>", opts)
+vim.keymap.set("i", "<C-z>", ":undo<CR>", opts)
+vim.keymap.set("n", "<C-S-z>", ":redo<CR>", opts)
+vim.keymap.set("v", "<C-S-z>", ":redo<CR>", opts)
+vim.keymap.set("i", "<C-S-z>", ":redo<CR>", opts)
