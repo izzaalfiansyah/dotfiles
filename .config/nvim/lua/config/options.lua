@@ -9,7 +9,8 @@ vim.g.lazyvim_php_lsp = "intelephense"
 vim.g.lazyvim_python_lsp = "pyright"
 vim.g.lazyvim_python_ruff = "ruff"
 vim.g.lazyvim_picker = "fzf"
-vim.g.lazyvim_prettier_needs_config = true
+vim.g.lazyvim_eslint_auto_format = true
+-- vim.g.lazyvim_prettier_needs_config = true
 -- vim.g.codeium_disable_bindings = 1
 
 opt.wrap = true
