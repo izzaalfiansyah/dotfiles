@@ -1,7 +1,7 @@
 local wezterm = require("wezterm")
 
 local config = wezterm.config_builder()
-local scheme = "Catppuccin Mocha"
+local scheme = "Tokyo Night"
 local tabline = wezterm.plugin.require("https://github.com/michaelbrusegard/tabline.wez")
 
 config.color_scheme = scheme
@@ -79,84 +79,84 @@ config.mouse_bindings = {
 	},
 }
 
-config.keys = {
-	-- Split pane horizontal
-	{
-		key = "|",
-		mods = "ALT|SHIFT",
-		action = wezterm.action.SplitHorizontal({ domain = "CurrentPaneDomain" }),
-	},
-
-	-- Split pane vertical
-	{
-		key = "_",
-		mods = "ALT|SHIFT",
-		action = wezterm.action.SplitVertical({ domain = "CurrentPaneDomain" }),
-	},
-
-	-- Move between panes
-	{
-		key = "LeftArrow",
-		mods = "ALT",
-		action = wezterm.action.ActivatePaneDirection("Left"),
-	},
-	{
-		key = "RightArrow",
-		mods = "ALT",
-		action = wezterm.action.ActivatePaneDirection("Right"),
-	},
-	{
-		key = "UpArrow",
-		mods = "ALT",
-		action = wezterm.action.ActivatePaneDirection("Up"),
-	},
-	{
-		key = "DownArrow",
-		mods = "ALT",
-		action = wezterm.action.ActivatePaneDirection("Down"),
-	},
-	{
-		key = "h",
-		mods = "ALT",
-		action = wezterm.action.ActivatePaneDirection("Left"),
-	},
-	{
-		key = "l",
-		mods = "ALT",
-		action = wezterm.action.ActivatePaneDirection("Right"),
-	},
-	{
-		key = "k",
-		mods = "ALT",
-		action = wezterm.action.ActivatePaneDirection("Up"),
-	},
-	{
-		key = "j",
-		mods = "ALT",
-		action = wezterm.action.ActivatePaneDirection("Down"),
-	},
-
-	-- Resizing panes
-	{
-		key = "LeftArrow",
-		mods = "ALT|SHIFT",
-		action = wezterm.action.AdjustPaneSize({ "Left", 2 }),
-	},
-	{
-		key = "RightArrow",
-		mods = "ALT|SHIFT",
-		action = wezterm.action.AdjustPaneSize({ "Right", 2 }),
-	},
-	{
-		key = "UpArrow",
-		mods = "ALT|SHIFT",
-		action = wezterm.action.AdjustPaneSize({ "Up", 1 }),
-	},
-	{
-		key = "DownArrow",
-		mods = "ALT|SHIFT",
-		action = wezterm.action.AdjustPaneSize({ "Down", 1 }),
-	},
-}
+-- config.keys = {
+-- 	-- Split pane horizontal
+-- 	{
+-- 		key = "|",
+-- 		mods = "ALT|SHIFT",
+-- 		action = wezterm.action.SplitHorizontal({ domain = "CurrentPaneDomain" }),
+-- 	},
+--
+-- 	-- Split pane vertical
+-- 	{
+-- 		key = "_",
+-- 		mods = "ALT|SHIFT",
+-- 		action = wezterm.action.SplitVertical({ domain = "CurrentPaneDomain" }),
+-- 	},
+--
+-- 	-- Move between panes
+-- 	{
+-- 		key = "LeftArrow",
+-- 		mods = "ALT",
+-- 		action = wezterm.action.ActivatePaneDirection("Left"),
+-- 	},
+-- 	{
+-- 		key = "RightArrow",
+-- 		mods = "ALT",
+-- 		action = wezterm.action.ActivatePaneDirection("Right"),
+-- 	},
+-- 	{
+-- 		key = "UpArrow",
+-- 		mods = "ALT",
+-- 		action = wezterm.action.ActivatePaneDirection("Up"),
+-- 	},
+-- 	{
+-- 		key = "DownArrow",
+-- 		mods = "ALT",
+-- 		action = wezterm.action.ActivatePaneDirection("Down"),
+-- 	},
+-- 	{
+-- 		key = "h",
+-- 		mods = "ALT",
+-- 		action = wezterm.action.ActivatePaneDirection("Left"),
+-- 	},
+-- 	{
+-- 		key = "l",
+-- 		mods = "ALT",
+-- 		action = wezterm.action.ActivatePaneDirection("Right"),
+-- 	},
+-- 	{
+-- 		key = "k",
+-- 		mods = "ALT",
+-- 		action = wezterm.action.ActivatePaneDirection("Up"),
+-- 	},
+-- 	{
+-- 		key = "j",
+-- 		mods = "ALT",
+-- 		action = wezterm.action.ActivatePaneDirection("Down"),
+-- 	},
+--
+-- 	-- Resizing panes
+-- 	{
+-- 		key = "LeftArrow",
+-- 		mods = "ALT|SHIFT",
+-- 		action = wezterm.action.AdjustPaneSize({ "Left", 2 }),
+-- 	},
+-- 	{
+-- 		key = "RightArrow",
+-- 		mods = "ALT|SHIFT",
+-- 		action = wezterm.action.AdjustPaneSize({ "Right", 2 }),
+-- 	},
+-- 	{
+-- 		key = "UpArrow",
+-- 		mods = "ALT|SHIFT",
+-- 		action = wezterm.action.AdjustPaneSize({ "Up", 1 }),
+-- 	},
+-- 	{
+-- 		key = "DownArrow",
+-- 		mods = "ALT|SHIFT",
+-- 		action = wezterm.action.AdjustPaneSize({ "Down", 1 }),
+-- 	},
+-- }
 
 return config
