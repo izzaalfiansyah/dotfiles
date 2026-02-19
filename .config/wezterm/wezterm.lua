@@ -20,6 +20,7 @@ config.default_cwd = wezterm.home_dir
 config.window_background_opacity = 0.75
 config.macos_window_background_blur = 50
 config.tab_bar_at_bottom = true
+config.max_fps = 120
 
 tabline.setup({
 	options = {
