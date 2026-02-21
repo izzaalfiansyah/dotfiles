@@ -43,8 +43,8 @@ tabline.setup({
 	},
 	sections = {
 		tabline_a = { "window" },
-		tabline_b = { "workspace" },
-		tabline_c = { " " },
+		tabline_b = { "" },
+		tabline_c = { "" },
 		tab_active = {
 			"index",
 			{ "process", padding = { left = 0, right = 1 } },
