@@ -4,7 +4,7 @@
   "disabled_mcps": ["websearch_exa"],
   "agents": {
     "sisyphus": {
-      "model": "opencode/kimi-k2.5-free"
+      "model": "opencode/glm-5-free"
     },
     "librarian": {
       "model": "opencode/glm-5-free"
@@ -13,10 +13,10 @@
       "model": "opencode/glm-5-free"
     },
     "oracle": {
-      "model": "opencode/kimi-k2.5-free"
+      "model": "opencode/glm-5-free"
     },
     "frontend-ui-ux-engineer": {
-      "model": "opencode/kimi-k2.5-free"
+      "model": "opencode/glm-5-free"
     },
     "document-writer": {
       "model": "opencode/glm-5-free"
