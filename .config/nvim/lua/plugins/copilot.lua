@@ -3,7 +3,7 @@ return {
   cmd = "Copilot",
   build = ":Copilot auth",
   event = "BufReadPost",
-  enabled = false,
+  enabled = true,
   opts = {
     suggestion = {
       enabled = not vim.g.ai_cmp,

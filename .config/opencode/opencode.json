@@ -1,6 +1,5 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "theme": "system",
   "plugin": ["oh-my-opencode", "opencode-antigravity-auth@latest"],
   "mcp": {
     "mcp_sequential_thinking": {

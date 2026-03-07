@@ -4,25 +4,25 @@
   "disabled_mcps": ["websearch_exa"],
   "agents": {
     "sisyphus": {
-      "model": "opencode/glm-5-free"
+      "model": "github-copilot/gpt-5.1-codex"
     },
     "librarian": {
-      "model": "opencode/glm-5-free"
+      "model": "github-copilot/gpt-4.1"
     },
     "explore": {
-      "model": "opencode/glm-5-free"
+      "model": "github-copilot/gpt-4.1"
     },
     "oracle": {
-      "model": "opencode/glm-5-free"
+      "model": "github-copilot/gpt-5.1"
     },
     "frontend-ui-ux-engineer": {
-      "model": "opencode/glm-5-free"
+      "model": "github-copilot/gpt-5.1-codex"
     },
     "document-writer": {
-      "model": "opencode/glm-5-free"
+      "model": "github-copilot/gpt-5.1"
     },
     "multimodal-looker": {
-      "model": "opencode/glm-5-free"
+      "model": "github-copilot/gpt-5.1"
     }
   }
 }

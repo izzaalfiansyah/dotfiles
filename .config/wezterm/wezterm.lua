@@ -79,6 +79,14 @@ config.mouse_bindings = {
 	},
 }
 
+config.keys = {
+	{
+		key = "Enter",
+		mods = "SHIFT",
+		action = wezterm.action.SendString("\x1b[200~\n\x1b[201~"),
+	},
+}
+
 -- config.keys = {
 -- 	-- Split pane horizontal
 -- 	{
