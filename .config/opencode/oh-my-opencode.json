@@ -4,25 +4,25 @@
   "disabled_mcps": ["websearch_exa"],
   "agents": {
     "sisyphus": {
-      "model": "github-copilot/gpt-5.1-codex"
+      "model": "github-copilot/gemini-3.1-pro-preview"
     },
     "librarian": {
-      "model": "github-copilot/gpt-4.1"
+      "model": "github-copilot/gemini-3-flash"
     },
     "explore": {
-      "model": "github-copilot/gpt-4.1"
+      "model": "github-copilot/gemini-3-flash"
     },
     "oracle": {
-      "model": "github-copilot/gpt-5.1"
+      "model": "github-copilot/grok-code-fast-1"
     },
     "frontend-ui-ux-engineer": {
-      "model": "github-copilot/gpt-5.1-codex"
+      "model": "github-copilot/gemini-3.1-pro-preview"
     },
     "document-writer": {
-      "model": "github-copilot/gpt-5.1"
+      "model": "github-copilot/grok-code-fast-1"
     },
     "multimodal-looker": {
-      "model": "github-copilot/gpt-5.1"
+      "model": "github-copilot/grok-code-fast-1"
     }
   }
 }
