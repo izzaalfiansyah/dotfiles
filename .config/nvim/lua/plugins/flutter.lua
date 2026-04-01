@@ -46,37 +46,36 @@ return {
     ft = "dart",
   },
   {
-    "RobertPietraru/bloc.nvim",
+    "wa11breaker/flutter-bloc.nvim",
     dependencies = {
       "nvim-lua/plenary.nvim",
+      "nvimtools/none-ls.nvim",
     },
-    ft = { "dart" }, -- just active on dart file
+    opts = {
+      bloc_type = "default", -- Choose from: 'default', 'equatable', 'freezed'
+      use_sealed_classes = false,
+      enable_code_actions = true,
+    },
+    ft = { "dart" },
     config = function()
-      require("bloc").setup()
-
-      local function get_name_path(type)
-        local default_path = vim.fn.expand("%:p:h")
-        local name = vim.fn.input(type .. " name: ")
-        local path = vim.fn.input(type .. " path: ", default_path)
-        path = path:sub(-1) == "/" and path or path .. "/"
-
-        return name, path
-      end
-
-      vim.keymap.set("n", "<leader>rbc", function()
-        local name, path = get_name_path("Cubit")
-        require("bloc").create_cubit(name, path)
-      end, { desc = "Create Cubit (Prompt)" })
-
-      vim.keymap.set("n", "<leader>rbb", function()
-        local name, path = get_name_path("Bloc")
-        require("bloc").create_bloc(name, path)
-      end, { desc = "Create Bloc (Prompt)" })
+      vim.keymap.set(
+        "n",
+        "<leader>rbc",
+        "<cmd>lua require('flutter-bloc').create_cubit()<cr>",
+        { desc = "Create Cubit (Prompt)" }
+      )
+      vim.keymap.set(
+        "n",
+        "<leader>rbb",
+        "<cmd>lua require('flutter-bloc').create_bloc()<cr>",
+        { desc = "Create Bloc (Prompt)" }
+      )
     end,
   },
   {
     "rithikjain/flutter-freezed.nvim",
     dependencies = {
+      "nvim-lua/plenary.nvim",
       "L3MON4D3/LuaSnip",
     },
     lazy = false,
@@ -89,12 +88,5 @@ return {
       { "<leader>rft", "<cmd>FlutterFreezedInfoToggle<CR>", desc = "Toggle flutter freezed generation info" },
       { "<leader>rfq", "<cmd>FlutterFreezedStopGen<CR>", desc = "Stop generating flutter freezed files" },
     },
-  },
-  {
-    "akinsho/pubspec-assist.nvim",
-    requires = "plenary.nvim",
-    config = function()
-      require("pubspec-assist").setup({})
-    end,
   },
 }

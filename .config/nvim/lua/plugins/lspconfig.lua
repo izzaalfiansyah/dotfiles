@@ -5,6 +5,9 @@ return {
       enabled = false,
     },
     servers = {
+      copilot = {
+        enabled = false,
+      },
       emmet_language_server = {
         filetypes = {
           "html",
