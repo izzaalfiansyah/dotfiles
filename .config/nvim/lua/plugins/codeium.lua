@@ -1,5 +1,6 @@
 return {
   "Exafunction/codeium.nvim",
+  enabled = false,
   opts = function()
     LazyVim.cmp.actions.ai_accept = function()
       if require("codeium.virtual_text").get_current_completion_item() then
