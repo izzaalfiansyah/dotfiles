@@ -107,8 +107,8 @@
   },
   "theme": {
     "mode": "dark",
-    "light": "One Light",
-    "dark": "One Dark",
+    "light": "GitHub Light",
+    "dark": "GitHub Dark",
   },
   "project_panel": {
     "hide_hidden": false,
@@ -196,8 +196,9 @@
     "gitlab-ci-ls": true,
     "biome": true,
     // theme
-    "catppuccin-blur": true,
     "material-icon-theme": true,
+    "tokyo-night": true,
+    "github-theme": true,
     // mcp server
     "mcp-server-context7": true,
     "mcp-server-github": true,
