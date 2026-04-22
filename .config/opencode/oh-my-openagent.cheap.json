@@ -4,16 +4,16 @@
 	"disabled_mcps": ["websearch_exa"],
 	"agents": {
 		"sisyphus": {
-			"model": "github-copilot/claude-sonnet-4.5"
+			"model": "github-copilot/gemini-3.1-pro-preview"
 		},
 		"librarian": {
-			"model": "github-copilot/gpt-5.2-codex"
+			"model": "github-copilot/gemini-3-flash-preview"
 		},
 		"explore": {
 			"model": "opencode/gpt-5-nano"
 		},
 		"oracle": {
-			"model": "github-copilot/gpt-5.2"
+			"model": "github-copilot/gemini-3.1-pro-preview"
 		},
 		"frontend-ui-ux-engineer": {
 			"model": "github-copilot/gemini-3.1-pro-preview"
@@ -22,7 +22,7 @@
 			"model": "github-copilot/grok-code-fast-1"
 		},
 		"multimodal-looker": {
-			"model": "github-copilot/gemini-3-flash-preview"
+			"model": "github-copilot/grok-code-fast-1"
 		}
 	}
 }
