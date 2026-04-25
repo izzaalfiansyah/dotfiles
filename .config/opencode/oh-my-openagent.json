@@ -1,28 +1,83 @@
 {
 	"$schema": "https://raw.githubusercontent.com/code-yeongyu/oh-my-opencode/master/assets/oh-my-opencode.schema.json",
-	"google_auth": false,
-	"disabled_mcps": ["websearch_exa"],
 	"agents": {
 		"sisyphus": {
-			"model": "github-copilot/claude-sonnet-4.5"
+			"model": "github-copilot/claude-sonnet-4.6",
+			"variant": "max"
 		},
-		"librarian": {
-			"model": "github-copilot/gpt-5.2-codex"
+		"hephaestus": {
+			"model": "github-copilot/gpt-5.4",
+			"variant": "medium"
+		},
+		"oracle": {
+			"model": "github-copilot/gpt-5.4",
+			"variant": "high"
 		},
 		"explore": {
 			"model": "opencode/gpt-5-nano"
 		},
-		"oracle": {
-			"model": "github-copilot/gpt-5.2"
+		"multimodal-looker": {
+			"model": "github-copilot/gemini-3-flash-preview",
+			"variant": "medium"
+		},
+		"prometheus": {
+			"model": "github-copilot/claude-sonnet-4.6",
+			"variant": "max"
+		},
+		"metis": {
+			"model": "github-copilot/claude-sonnet-4.6",
+			"variant": "max"
+		},
+		"momus": {
+			"model": "github-copilot/gpt-5.4",
+			"variant": "xhigh"
+		},
+		"atlas": {
+			"model": "github-copilot/claude-sonnet-4.6"
+		},
+		"sisyphus-junior": {
+			"model": "github-copilot/claude-sonnet-4.6"
+		},
+		"librarian": {
+			"model": "github-copilot/gemini-3-flash-preview"
 		},
 		"frontend-ui-ux-engineer": {
 			"model": "github-copilot/gemini-3.1-pro-preview"
 		},
 		"document-writer": {
 			"model": "github-copilot/grok-code-fast-1"
-		},
-		"multimodal-looker": {
-			"model": "github-copilot/gemini-3-flash-preview"
 		}
-	}
+	},
+	"categories": {
+		"visual-engineering": {
+			"model": "github-copilot/gemini-3.1-pro-preview",
+			"variant": "high"
+		},
+		"ultrabrain": {
+			"model": "github-copilot/gpt-5.4",
+			"variant": "high"
+		},
+		"deep": {
+			"model": "github-copilot/gpt-5.4",
+			"variant": "medium"
+		},
+		"artistry": {
+			"model": "github-copilot/gemini-3.1-pro-preview",
+			"variant": "high"
+		},
+		"quick": {
+			"model": "github-copilot/gpt-5.4-mini"
+		},
+		"unspecified-low": {
+			"model": "github-copilot/gemini-3-flash-preview"
+		},
+		"unspecified-high": {
+			"model": "github-copilot/claude-sonnet-4.6"
+		},
+		"writing": {
+			"model": "github-copilot/claude-sonnet-4.6"
+		}
+	},
+	"google_auth": false,
+	"disabled_mcps": ["websearch_exa"]
 }

@@ -1,9 +1,9 @@
 {
 	"$schema": "https://opencode.ai/config.json",
 	"plugin": [
-		"oh-my-openagent",
 		"opencode-antigravity-auth@latest",
-		"superpowers@git+https://github.com/obra/superpowers.git"
+		"superpowers@git+https://github.com/obra/superpowers.git",
+		"oh-my-openagent@latest"
 	],
 	"mcp": {
 		"mcp_sequential_thinking": {
