@@ -2,35 +2,28 @@
 	"$schema": "https://raw.githubusercontent.com/code-yeongyu/oh-my-opencode/master/assets/oh-my-opencode.schema.json",
 	"agents": {
 		"sisyphus": {
-			"model": "github-copilot/claude-sonnet-4.6",
-			"variant": "max"
+			"model": "github-copilot/claude-sonnet-4.6"
 		},
 		"hephaestus": {
-			"model": "github-copilot/gpt-5.4",
-			"variant": "medium"
+			"model": "github-copilot/gpt-5.4"
 		},
 		"oracle": {
-			"model": "github-copilot/gpt-5.4",
-			"variant": "high"
+			"model": "github-copilot/gpt-5.4"
 		},
 		"explore": {
 			"model": "opencode/gpt-5-nano"
 		},
 		"multimodal-looker": {
-			"model": "github-copilot/gemini-3-flash-preview",
-			"variant": "medium"
+			"model": "github-copilot/gemini-3-flash-preview"
 		},
 		"prometheus": {
-			"model": "github-copilot/claude-sonnet-4.6",
-			"variant": "max"
+			"model": "github-copilot/claude-sonnet-4.6"
 		},
 		"metis": {
-			"model": "github-copilot/claude-sonnet-4.6",
-			"variant": "max"
+			"model": "github-copilot/claude-sonnet-4.6"
 		},
 		"momus": {
-			"model": "github-copilot/gpt-5.4",
-			"variant": "xhigh"
+			"model": "github-copilot/gpt-5.4"
 		},
 		"atlas": {
 			"model": "github-copilot/claude-sonnet-4.6"
@@ -50,20 +43,16 @@
 	},
 	"categories": {
 		"visual-engineering": {
-			"model": "github-copilot/gemini-3.1-pro-preview",
-			"variant": "high"
+			"model": "github-copilot/gemini-3.1-pro-preview"
 		},
 		"ultrabrain": {
-			"model": "github-copilot/gpt-5.4",
-			"variant": "high"
+			"model": "github-copilot/gpt-5.3-codex"
 		},
 		"deep": {
-			"model": "github-copilot/gpt-5.4",
-			"variant": "medium"
+			"model": "github-copilot/gpt-5.3-codex"
 		},
 		"artistry": {
-			"model": "github-copilot/gemini-3.1-pro-preview",
-			"variant": "high"
+			"model": "github-copilot/gemini-3.1-pro-preview"
 		},
 		"quick": {
 			"model": "github-copilot/gpt-5.4-mini"
@@ -75,7 +64,7 @@
 			"model": "github-copilot/claude-sonnet-4.6"
 		},
 		"writing": {
-			"model": "github-copilot/claude-sonnet-4.6"
+			"model": "github-copilot/grok-code-fast-1"
 		}
 	},
 	"google_auth": false,
