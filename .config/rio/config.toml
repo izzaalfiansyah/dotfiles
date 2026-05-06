@@ -1,0 +1,24 @@
+# See the full configuration reference: https://rioterm.com/docs/config
+theme = "tokyonight"
+copy-on-select = true
+option-as-alt = "left"
+
+[cursor]
+blinking = true
+
+[effects]
+trail-cursor = true
+
+[fonts]
+size = 13.5
+family = "IosevkaTerm Nerd Font"
+features = []
+use-drawable-chars = true
+symbol-map = []
+disable-warnings-not-found = false
+additional-dirs = []
+
+[window]
+decorations = "Transparent"
+blur = true
+opacity = 0.55
