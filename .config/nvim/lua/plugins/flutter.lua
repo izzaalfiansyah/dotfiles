@@ -10,11 +10,6 @@ return {
     config = function()
       require("flutter-tools").setup({
         lsp = {
-          color = {
-            enabled = true,
-            background = true,
-            foreground = true,
-          },
           cmd = { "dart", "language-server", "--protocol=lsp" },
         },
         ui = {
@@ -33,6 +28,8 @@ return {
           flutter_path = "flutter", -- absolute path if flutter not detected
         },
       })
+
+      vim.lsp.document_color.enable()
 
       vim.keymap.set("n", "<leader>rs", ":FlutterRun<cr>", { desc = "Flutter Run" })
       vim.keymap.set("n", "<leader>rr", ":FlutterReload<cr>", { desc = "Flutter Reload" })
