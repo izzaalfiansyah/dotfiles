@@ -21,6 +21,9 @@ return {
       "js-debug-adapter",
       "sqlfluff",
       "css-lsp",
+      -- "devops",
+      "gitlab-ci-ls",
+      "gh-actions-language-server",
     },
   },
 }
