@@ -55,7 +55,6 @@
   },
   "tab_size": 2,
   "agent": {
-    "dock": "right",
     "default_model": {
       "provider": "CliProxy",
       "model": "gemini-3-flash-preview",
@@ -115,7 +114,6 @@
     "dark": "One Dark",
   },
   "project_panel": {
-    "dock": "left",
     "hide_hidden": false,
     "hide_root": false,
     "folder_icons": true,
@@ -137,8 +135,8 @@
     "show": true,
   },
   "title_bar": {
-    "show_branch_status_icon": true,
     "show_user_picture": true,
+    "show_branch_icon": true,
   },
   "diagnostics": {
     "inline": {
