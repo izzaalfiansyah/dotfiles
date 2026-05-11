@@ -3,7 +3,7 @@
 -- Add any additional options here
 local opt = vim.opt
 
--- require("telescope").load_extension("flutter")
+vim.o.exrc = true
 
 vim.g.lazyvim_php_lsp = "intelephense"
 vim.g.lazyvim_python_lsp = "pyright"
