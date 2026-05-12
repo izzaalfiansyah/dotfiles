@@ -11,7 +11,7 @@
 			"model": "github-copilot/gpt-5.4"
 		},
 		"explore": {
-			"model": "opencode/gpt-5-nano"
+			"model": "github-copilot/grok-code-fast-1"
 		},
 		"multimodal-looker": {
 			"model": "github-copilot/gemini-3-flash-preview"
