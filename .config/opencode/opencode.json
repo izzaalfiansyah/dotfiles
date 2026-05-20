@@ -6,7 +6,7 @@
 		"oh-my-openagent@latest"
 	],
 	"mcp": {
-		"mcp_sequential_thinking": {
+		"sequential_thinking": {
 			"type": "local",
 			"command": [
 				"bunx",
@@ -14,7 +14,7 @@
 				"@modelcontextprotocol/server-sequential-thinking"
 			]
 		},
-		"mcp_exa": {
+		"exa": {
 			"type": "local",
 			"command": [
 				"bunx",
@@ -23,23 +23,24 @@
 				"tools=web_search_exa,get_code_context_exa,crawling_exa"
 			]
 		},
-		"mcp_github": {
+		"github": {
 			"type": "remote",
 			"url": "https://api.githubcopilot.com/mcp/",
 			"headers": {
 				"Authorization": "Bearer {file:~/.config/opencode/.secret/github_token}"
 			}
 		},
-		"mcp_notion": {
+		"notion": {
 			"type": "local",
 			"command": ["bunx", "-y", "@notionhq/notion-mcp-server"],
 			"environment": {
 				"NOTION_TOKEN": "{file:~/.config/opencode/.secret/notion_token}"
 			}
 		},
-		"mcp_anki": {
-			"type": "remote",
-			"url": "http://localhost:3141"
+		"codegraph": {
+			"type": "local",
+			"command": ["codegraph", "serve", "--mcp"],
+			"enabled": true
 		}
 	},
 	"provider": {
