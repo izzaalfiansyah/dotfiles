@@ -1,16 +1,27 @@
 *
+!README.md
+
 !.gitignore
 !.gitconfig
 !.zshrc
+
 !.config/
 !.config/**/*
+
 !walls/
 !walls/**/*
+
 !.warp/
 !.warp/**/*
-!README.md
+
 !.factory/
 !.factory/**/*
+
+!.pi/
+!.pi/agent/
+!.pi/agent/settings.json
+!.pi/agent/mcp.json
+!.pi/agent/AGENTS.md
 
 # FVM Version Cache
 .fvm/

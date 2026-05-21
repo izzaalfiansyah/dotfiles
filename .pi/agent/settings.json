@@ -1,0 +1,45 @@
+{
+	"theme": "dark",
+	"defaultProvider": "github-copilot",
+	"defaultModel": "claude-sonnet-4.6",
+	"packages": [
+		"npm:pi-rtk-optimizer",
+		"npm:context-mode",
+		"npm:pi-subagents",
+		"npm:pi-mcp-adapter",
+		"npm:pi-web-access",
+		"npm:pi-intercom",
+		"git:github.com/coctostan/pi-superpowers"
+	],
+	"skills": ["~/.config/opencode/skills"],
+	"subagents": {
+		"agentOverrides": {
+			"scout": {
+				"model": "github-copilot/gpt-3-flash-preview"
+			},
+			"researcher": {
+				"model": "github-copilot/gpt-5-mini"
+			},
+			"planner": {
+				"model": "github-copilot/gpt-5.4"
+			},
+			"worker": {
+				"model": "github-copilot/claude-sonnet-4.6"
+			},
+			"reviewer": {
+				"model": "github-copilot/gemini-3.1-pro-preview"
+			},
+			"context-builder": {
+				"model": "github-copilot/claude-sonnet-4.6"
+			},
+			"oracle": {
+				"model": "github-copilot/gpt-5.4"
+			},
+			"delegate": {
+				"model": "github-copilot/gemini-3-flash-preview"
+			}
+		}
+	},
+	"lastChangelogVersion": "0.74.1",
+	"defaultThinkingLevel": "medium"
+}

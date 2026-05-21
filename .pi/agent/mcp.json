@@ -1,0 +1,20 @@
+{
+	"mcpServers": {
+		"sequential_thinking": {
+			"command": "bunx",
+			"args": ["-y", "@modelcontextprotocol/server-sequential-thinking"]
+		},
+		"exa": {
+			"command": "bunx",
+			"args": [
+				"-y",
+				"exa-mcp-server",
+				"tools=web_search_exa,get_code_context_exa,crawling_exa"
+			]
+		},
+		"codegraph": {
+			"command": "codegraph",
+			"args": ["serve", "--mcp"]
+		}
+	}
+}
