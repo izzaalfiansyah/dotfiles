@@ -11,7 +11,7 @@
 			"model": "github-copilot/gpt-5.4"
 		},
 		"explore": {
-			"model": "github-copilot/grok-code-fast-1"
+			"model": "github-copilot/gpt-5-mini"
 		},
 		"multimodal-looker": {
 			"model": "github-copilot/gemini-3-flash-preview"
@@ -38,7 +38,7 @@
 			"model": "github-copilot/gemini-3.1-pro-preview"
 		},
 		"document-writer": {
-			"model": "github-copilot/grok-code-fast-1"
+			"model": "github-copilot/gpt-5-mini"
 		}
 	},
 	"categories": {
@@ -64,7 +64,7 @@
 			"model": "github-copilot/claude-sonnet-4.6"
 		},
 		"writing": {
-			"model": "github-copilot/grok-code-fast-1"
+			"model": "github-copilot/gpt-5-mini"
 		}
 	},
 	"google_auth": false,
