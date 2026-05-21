@@ -13,3 +13,4 @@ fnm env --use-on-cd --shell fish | source
 alias ls="eza --icons"
 alias cd="z"
 alias gl="glab"
+alias ae="source .venv/bin/activate.fish"
