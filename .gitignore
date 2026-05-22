@@ -23,6 +23,9 @@
 !.pi/agent/mcp.json
 !.pi/agent/AGENTS.md
 
+!.agents
+!.agents/**/*
+
 # FVM Version Cache
 .fvm/
 
