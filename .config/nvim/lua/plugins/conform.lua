@@ -19,9 +19,9 @@ return {
     opts.formatters_by_ft["typescript"] = { "biome-check" }
     opts.formatters_by_ft["javascriptreact"] = { "biome-check" }
     opts.formatters_by_ft["typescriptreact"] = { "biome-check" }
-    opts.formatters_by_ft["vue"] = { "biome-check" }
-    opts.formatters_by_ft["svelte"] = { "biome-check" }
-    opts.formatters_by_ft["astro"] = { "biome-check" }
+    opts.formatters_by_ft["vue"] = { "prettier" }
+    opts.formatters_by_ft["svelte"] = { "prettier" }
+    opts.formatters_by_ft["astro"] = { "prettier" }
     opts.formatters_by_ft["json"] = { "biome-check" }
     opts.formatters_by_ft["css"] = { "biome-check" }
 
