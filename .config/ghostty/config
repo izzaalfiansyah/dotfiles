@@ -7,7 +7,7 @@ font-family = Iosevka Term Medium
 font-size = 13
 font-synthetic-style = true
 
-shell-integration = fish
+shell-integration = zsh
 
 background-opacity = 0.75
 background-blur = 35
