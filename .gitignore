@@ -5,7 +5,6 @@
 !.gitconfig
 
 !.zshrc
-!.zsh_plugins.txt
 
 !.config/
 !.config/**/*

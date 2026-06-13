@@ -10,7 +10,22 @@ atuin init fish | source
 zoxide init fish | source
 fnm env --use-on-cd --shell fish | source
 
-alias ls="eza --icons"
-alias cd="z"
-alias gl="glab"
+if command -v eza &>/dev/null
+    alias rls=$(which ls)
+    alias ls="$(which eza) --icons"
+end
+
+if command -v bat &>/dev/null
+    alias rcat=$(which cat)
+    alias cat=$(which bat)
+else if command -v batcat &>/dev/null
+    alias rcat=$(which cat)
+    alias cat=$(which batcat)
+end
+
+if command -v zoxide &>/dev/null
+    alias rcd="$(which cd)"
+    alias cd="z"
+end
+
 alias ae="source .venv/bin/activate.fish"
