@@ -1,16 +1,16 @@
 window-theme = system
 
-theme = light:Catppuccin Latte,dark:Catppuccin Mocha
+theme = light:TokyoNight Day,dark:TokyoNight Night
 # theme = light:Github Light Default,dark:Github Dark Default
 
 font-family = Iosevka Term Medium
-font-size = 13
+font-size = 14
 font-synthetic-style = true
 
 shell-integration = zsh
 
 background-opacity = 0.75
-background-blur = 35
+background-blur = 50
 
 term = xterm-256color
 
