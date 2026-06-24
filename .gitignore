@@ -24,6 +24,9 @@
 !.pi/agent/mcp.json
 !.pi/agent/AGENTS.md
 
+!.claude/
+!.claude/**/*
+
 !.agents
 !.agents/**/*
 

@@ -1,0 +1,237 @@
+{
+  "provider": {
+    "9router": {
+      "npm": "@ai-sdk/openai-compatible",
+      "options": {
+        "baseURL": "http://127.0.0.1:20128/v1",
+        "apiKey": "{file:~/.config/opencode/.secret/9router_token}"
+      },
+      "models": {
+        "ag/claude-opus-4-6-thinking": {
+          "name": "ag/claude-opus-4-6-thinking",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        },
+        "ag/claude-sonnet-4-6": {
+          "name": "ag/claude-sonnet-4-6",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        },
+        "ag/gemini-3-flash": {
+          "name": "ag/gemini-3-flash",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        },
+        "ag/gemini-pro-agent": {
+          "name": "ag/gemini-pro-agent",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        },
+        "ag/gemini-3.1-pro-low": {
+          "name": "ag/gemini-3.1-pro-low",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        },
+        "ag/gemini-3-flash-agent": {
+          "name": "ag/gemini-3-flash-agent",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        },
+        "ag/gemini-3.5-flash-low": {
+          "name": "ag/gemini-3.5-flash-low",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        },
+        "ag/gpt-oss-120b-medium": {
+          "name": "ag/gpt-oss-120b-medium",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        },
+        "ag/gemini-3.5-flash-extra-low": {
+          "name": "ag/gemini-3.5-flash-extra-low",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        },
+        "gc/gemini-2.5-flash": {
+          "name": "gc/gemini-2.5-flash",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        },
+        "gc/gemini-2.5-flash-lite": {
+          "name": "gc/gemini-2.5-flash-lite",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        },
+        "gc/gemini-2.5-pro": {
+          "name": "gc/gemini-2.5-pro",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        },
+        "gc/gemini-3-flash-preview": {
+          "name": "gc/gemini-3-flash-preview",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        },
+        "gc/gemini-3-pro-preview": {
+          "name": "gc/gemini-3-pro-preview",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        },
+        "gc/gemini-3.1-flash-lite-preview": {
+          "name": "gc/gemini-3.1-flash-lite-preview",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        },
+        "gc/gemini-3.1-pro-preview": {
+          "name": "gc/gemini-3.1-pro-preview",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        },
+        "mmf/mimo-auto": {
+          "name": "mmf/mimo-auto",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        },
+        "oc/big-pickle": {
+          "name": "oc/big-pickle",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        },
+        "oc/deepseek-v4-flash-free": {
+          "name": "oc/deepseek-v4-flash-free",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        },
+        "oc/mimo-v2.5-free": {
+          "name": "oc/mimo-v2.5-free",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        },
+        "oc/minimax-m3-free": {
+          "name": "oc/minimax-m3-free",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        },
+        "oc/qwen3.6-plus-free": {
+          "name": "oc/qwen3.6-plus-free",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        },
+        "oc/north-mini-code-free": {
+          "name": "oc/north-mini-code-free",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        },
+        "oc/nemotron-3-ultra-free": {
+          "name": "oc/nemotron-3-ultra-free",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        },
+        "nvidia/z-ai/glm4.7": {
+          "name": "nvidia/z-ai/glm4.7",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        },
+        "nvidia/minimaxai/minimax-m2.7": {
+          "name": "nvidia/minimaxai/minimax-m2.7",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        },
+        "ollama/glm-4.7-flash": {
+          "name": "ollama/glm-4.7-flash",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        },
+        "ollama/kimi-k2.5": {
+          "name": "ollama/kimi-k2.5",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        },
+        "ollama/minimax-m2.5": {
+          "name": "ollama/minimax-m2.5",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        },
+        "ollama/glm-5": {
+          "name": "ollama/glm-5",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        },
+        "ollama/gpt-oss:120b": {
+          "name": "ollama/gpt-oss:120b",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        },
+        "ollama/qwen3.5": {
+          "name": "ollama/qwen3.5",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        }
+      }
+    }
+  }
+}
