@@ -5,7 +5,7 @@
       "Bash(rtk *)"
     ]
   },
-  "model": "claude-3-freecc-no-thinking/nvidia_nim/z-ai/glm-5.1",
+  "model": "anthropic/gemini/models/gemini-2.5-flash",
   "hooks": {
     "PreToolUse": [
       {
@@ -26,7 +26,14 @@
     "superpowers@superpowers-marketplace": true,
     "frontend-design@claude-plugins-official": true,
     "context7@claude-plugins-official": true,
-    "serena@claude-plugins-official": false
+    "serena@claude-plugins-official": false,
+    "voltagent-core-dev@voltagent-subagents": true,
+    "voltagent-data-ai@voltagent-subagents": true,
+    "voltagent-dev-exp@voltagent-subagents": true,
+    "voltagent-infra@voltagent-subagents": true,
+    "voltagent-meta@voltagent-subagents": true,
+    "voltagent-qa-sec@voltagent-subagents": true,
+    "voltagent-research@voltagent-subagents": true
   },
   "extraKnownMarketplaces": {
     "caveman": {
@@ -45,6 +52,12 @@
       "source": {
         "source": "github",
         "repo": "Egonex-AI/Understand-Anything"
+      }
+    },
+    "voltagent-subagents": {
+      "source": {
+        "source": "github",
+        "repo": "VoltAgent/awesome-claude-code-subagents"
       }
     }
   },
