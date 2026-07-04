@@ -32,7 +32,8 @@
     "voltagent-infra@voltagent-subagents": true,
     "voltagent-meta@voltagent-subagents": true,
     "voltagent-qa-sec@voltagent-subagents": true,
-    "voltagent-research@voltagent-subagents": true
+    "voltagent-research@voltagent-subagents": true,
+    "typescript-lsp@claude-plugins-official": true
   },
   "extraKnownMarketplaces": {
     "caveman": {
