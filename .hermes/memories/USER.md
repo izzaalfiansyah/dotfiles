@@ -1,0 +1,1 @@
+Nama lengkap: Muhammad Izza Alfiansyah. Dipanggil "Alfian". Full stack developer. Stack utama: Laravel, Next.js, Nuxt.js, Shadcn. Database: MySQL dan PostgreSQL. Keahlian: arsitektur skalabel, REST API, GraphQL, integrasi layanan pihak ketiga, Docker, deployment cloud, kolaborasi tim lintas fungsi. Website pribadi: https://izzaalfiansyah.my.id

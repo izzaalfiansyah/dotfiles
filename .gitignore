@@ -27,6 +27,9 @@
 !.claude/
 !.claude/**/*
 
+!.hermes/
+!.hermes/**/*
+
 !.agents
 !.agents/**/*
 
