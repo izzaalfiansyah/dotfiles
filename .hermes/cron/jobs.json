@@ -60,10 +60,10 @@
       "context_from": null,
       "schedule": {
         "kind": "cron",
-        "expr": "0 10 * * 1-5",
-        "display": "0 10 * * 1-5"
+        "expr": "0 10 * * *",
+        "display": "0 10 * * *"
       },
-      "schedule_display": "0 10 * * 1-5",
+      "schedule_display": "0 10 * * *",
       "repeat": {
         "times": null,
         "completed": 0
@@ -121,7 +121,7 @@
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
-      "deliver": "telegram:1999996728",
+      "deliver": "telegram",
       "origin": null,
       "enabled_toolsets": [
         "web",
@@ -132,5 +132,5 @@
       "fire_claim": null
     }
   ],
-  "updated_at": "2026-07-05T13:07:04.359798+07:00"
+  "updated_at": "2026-07-06T09:26:13.128974+07:00"
 }
