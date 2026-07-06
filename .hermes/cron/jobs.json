@@ -22,15 +22,15 @@
       "schedule_display": "0 10 * * 1",
       "repeat": {
         "times": null,
-        "completed": 2
+        "completed": 3
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-07-05T12:37:22.101474+07:00",
-      "next_run_at": "2026-07-06T10:00:00+07:00",
-      "last_run_at": "2026-07-05T12:47:24.682176+07:00",
+      "next_run_at": "2026-07-13T10:00:00+07:00",
+      "last_run_at": "2026-07-06T10:00:45.653096+07:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -66,16 +66,16 @@
       "schedule_display": "0 10 * * *",
       "repeat": {
         "times": null,
-        "completed": 0
+        "completed": 1
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-07-05T12:40:28.834990+07:00",
-      "next_run_at": "2026-07-06T10:00:00+07:00",
-      "last_run_at": null,
-      "last_status": null,
+      "next_run_at": "2026-07-07T10:00:00+07:00",
+      "last_run_at": "2026-07-06T10:03:19.426789+07:00",
+      "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
       "deliver": "telegram",
@@ -85,14 +85,17 @@
         "terminal",
         "file"
       ],
-      "workdir": null
+      "workdir": null,
+      "fire_claim": null
     },
     {
       "id": "34b36866e560",
       "name": "Daily Work Review",
-      "prompt": "Lakukan review harian dalam bahasa Indonesia. Sebelum merangkum, cek konteks percakapan hari ini untuk mengidentifikasi direktori kerja utama yang aktif. Jika direktori hari ini jelas, pakai itu. Jika belum jelas, keluarkan 1 pertanyaan ringkas di awal sebagai clarifikasi: \"Hari ini dominan kerja di direktori mana? Projects / dev / Documents / lainnya?\" Lanjutkan rangkuman best-effort berdasarkan konteks yang tersedia.\n\nOutput maksimal 2 bagian:\n1) Ringkasan task 24 jam terakhir (maks 7-10 poin). Sumber: percakapan, file/direktori yang aktif, git/modifikasi terbaru, artefak, catatan, atau riwayat sesi yang relevan. Jika informasi terbatas, tuliskan dengan eksplisit sesuai data yang ada tanpa menambal.\n2) Rekomendasi prioritas untuk hari kerja berikutnya. Aturan next-day: Senin-Kamis \u2192 besok; Jumat \u2192 Senin; Sabtu/Minggu \u2192 skip, jangan kirim rekomendasi. Kalau Sabtu/Minggu batasi hanya ringkasan singkat, tanpa rekomendasi.",
-      "skills": [],
-      "skill": null,
+      "prompt": "Hari ini: {{TODAY_Y_M_D}}. Ambil HANYA file ~/.hermes/worktasks/{{TODAY_Y_M_D}}.md. Jangan melihat tanggal lain.\n\n1. Buat ringkasan tugas yang sudah dikerjakan hari ini beserta dampak integrasi antar bagian sistemnya.\n2. Berikan rekomendasi 3-5 tugas prioritas yang masuk akal dikerjakan untuk esok hari, disesuaikan dengan cabang proyek aktif. Jika memungkinkan, sebutkan file/area yang perlu diumbar.\n3. Hasilkan output dalam bahasa Indonesia, ringkas, dan mudah dibaca untuk harian kerja.",
+      "skills": [
+        "daily-work-log"
+      ],
+      "skill": "daily-work-log",
       "model": null,
       "provider": null,
       "provider_snapshot": "nous",
@@ -109,7 +112,7 @@
       "schedule_display": "0 16 * * 1-5",
       "repeat": {
         "times": null,
-        "completed": 2
+        "completed": 4
       },
       "enabled": true,
       "state": "scheduled",
@@ -117,7 +120,7 @@
       "paused_reason": null,
       "created_at": "2026-07-05T12:51:28.500195+07:00",
       "next_run_at": "2026-07-06T16:00:00+07:00",
-      "last_run_at": "2026-07-05T13:07:04.358757+07:00",
+      "last_run_at": "2026-07-06T12:35:39.479444+07:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -132,5 +135,5 @@
       "fire_claim": null
     }
   ],
-  "updated_at": "2026-07-06T09:26:13.128974+07:00"
+  "updated_at": "2026-07-06T12:40:52.028425+07:00"
 }
