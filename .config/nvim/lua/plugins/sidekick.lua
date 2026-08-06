@@ -4,6 +4,7 @@ return {
   dependencies = {
     "zbirenbaum/copilot.lua",
   },
+  enabled = false,
   opts = {
     -- add any options here
     cli = {

@@ -10,12 +10,11 @@ return {
       ["<C-k>"] = { "select_prev", "fallback" },
     },
     snippets = { preset = "luasnip" },
-    completion = { documentation = { auto_show = true } },
     sources = {
-      default = { "lsp", "path", "snippets", "buffer" },
-      -- providers = {
-      --   codeium = { name = "Codeium", module = "codeium.blink", async = true },
-      -- },
+      default = { "lsp", "path", "snippets", "buffer", "codeium" },
+      providers = {
+        codeium = { name = "Codeium", module = "codeium.blink", async = true },
+      },
     },
     fuzzy = {
       sorts = {
