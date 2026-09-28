@@ -7,6 +7,8 @@ return {
       "duster",
       "emmet-language-server",
       "eslint-lsp",
+      "oxlint",
+      "oxfmt",
       "intelephense",
       "lua-language-server",
       -- "phpcs",
