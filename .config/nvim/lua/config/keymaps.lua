@@ -12,22 +12,8 @@ vim.keymap.set("n", "<C-s>", vim.cmd.write, { desc = "Save file" })
 vim.keymap.set("i", "<C-s>", vim.cmd.write, { desc = "Save file" })
 vim.keymap.set("v", "<C-s>", vim.cmd.write, { desc = "Save file" })
 
--- Set File Type
-vim.keymap.set("n", "<leader>sf", function()
-  vim.ui.input({ prompt = "Set filetype: " }, function(input)
-    if input then
-      vim.cmd("set filetype=" .. input)
-    end
-  end)
-end, { desc = "Change Filetype" })
-
 -- Disable recording typing
 vim.keymap.set("n", "q", "<Nop>", opts)
-
--- Codeium
-vim.keymap.set("n", "<leader>acc", ":Codeium Chat<CR>", { desc = "Codeium Chat" })
-vim.keymap.set("n", "<leader>act", ":Codeium Toggle<CR>", { desc = "Codeium Toggle" })
-vim.keymap.set("n", "<leader>aca", ":Codeium Auth<CR>", { desc = "Codeium Auth" })
 
 -- Copy and Cut
 vim.keymap.set("n", "<C-c>", "+yy", opts)
