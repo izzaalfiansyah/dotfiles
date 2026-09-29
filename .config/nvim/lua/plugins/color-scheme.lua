@@ -2,14 +2,10 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "github_dark",
+      colorscheme = "nordfox",
     },
   },
-  {
-    "projekt0n/github-nvim-theme",
-    name = "github-theme",
-    lazy = false,
-  },
+  { "EdenEast/nightfox.nvim", name = "nightfox", lazy = false },
   {
     "catppuccin/nvim",
     name = "catppuccin",

@@ -49,7 +49,7 @@ should_dim_inactive_panes = false
 focus_pane_on_hover = false
 
 [appearance.cursor]
-cursor_display_type = "block"
+cursor_display_type = "bar"
 
 [appearance.icon]
 app_icon = "default"
@@ -167,7 +167,7 @@ left_alt = false
 right_alt = false
 
 [text_editing]
-vim_mode_enabled = true
+vim_mode_enabled = false
 
 [notifications]
 toast_duration_secs = 8
