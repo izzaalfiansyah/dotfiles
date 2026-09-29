@@ -1,13 +1,17 @@
 return {
-  "Exafunction/codeium.nvim",
-  enabled = true,
-  opts = {
-    enable_cmp_source = true,
-    virtual_text = {
-      enabled = true,
-      key_bindings = {
-        accept = "<Tab>",
-      },
-    },
-  },
+  "Exafunction/windsurf.vim",
+  config = function()
+    vim.keymap.set("i", "<Tab>", function()
+      return vim.fn["codeium#Accept"]()
+    end, { expr = true, silent = true })
+    vim.keymap.set("i", "<c-;>", function()
+      return vim.fn["codeium#CycleCompletions"](1)
+    end, { expr = true, silent = true })
+    vim.keymap.set("i", "<c-,>", function()
+      return vim.fn["codeium#CycleCompletions"](-1)
+    end, { expr = true, silent = true })
+    vim.keymap.set("i", "<c-x>", function()
+      return vim.fn["codeium#Clear"]()
+    end, { expr = true, silent = true })
+  end,
 }
