@@ -2,19 +2,25 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "nordfox",
+      colorscheme = "onedark",
     },
   },
-  { "EdenEast/nightfox.nvim", name = "nightfox", lazy = false },
+  {
+    "navarasu/onedark.nvim",
+    lazy = false,
+    opts = {
+      transparent = true,
+    },
+  },
   {
     "catppuccin/nvim",
     name = "catppuccin",
     lazy = false,
     opts = {
-      flavour = "mocha", -- latte, frappe, macchiato, mocha
+      flavour = "frappe", -- latte, frappe, macchiato, mocha
       background = {
         light = "latte",
-        dark = "mocha",
+        dark = "frappe",
       },
       transparent_background = true,
     },
