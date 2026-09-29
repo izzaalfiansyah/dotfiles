@@ -4,6 +4,10 @@ return {
     dashboard = {
       enabled = false,
     },
+    image = {
+      enabled = true,
+      force = true,
+    },
     explorer = {
       enabled = true,
       auto_close = false, -- disable auto-close when focus shifts
@@ -23,13 +27,18 @@ return {
           focus = "list", -- ensure it stays focused
           hidden = true,
           ignored = true,
+          layout = {
+            layout = {
+              width = 28,
+            },
+          },
         },
       },
     },
     terminal = {
       win = {
         position = "right",
-        width = 0.23,
+        width = 50,
       },
     },
     lazygit = {
