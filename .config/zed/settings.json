@@ -7,12 +7,19 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "outline_panel": {
+    "dock": "left"
+  },
+  "collaboration_panel": {
+    "dock": "left"
+  },
   "session": {
     "trust_all_worktrees": true,
   },
   "hard_tabs": false,
   "show_whitespaces": "selection",
   "git_panel": {
+    "dock": "left",
     "tree_view": true,
     "collapse_untracked_diff": true,
   },
