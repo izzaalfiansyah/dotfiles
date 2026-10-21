@@ -1,8 +1,148 @@
 {
   "$schema": "https://opencode.ai/config.json",
   "plugin": [
-    "opencode-antigravity-auth@latest",
     "superpowers@git+https://github.com/obra/superpowers.git",
-    "oh-my-openagent@latest"
-  ]
+    "@dietrichgebert/ponytail"
+  ],
+  "provider": {
+    "9router": {
+      "npm": "@ai-sdk/openai-compatible",
+      "options": {
+        "baseURL": "http://127.0.0.1:20128/v1",
+        "apiKey": "sk-261ba3f26a6923dd-2gnmhj-050212be"
+      },
+      "models": {
+        "ag/claude-opus-4-6-thinking": {
+          "name": "ag/claude-opus-4-6-thinking",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        },
+        "ag/claude-sonnet-4-6": {
+          "name": "ag/claude-sonnet-4-6",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        },
+        "ag/gemini-3-flash": {
+          "name": "ag/gemini-3-flash",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        },
+        "ag/gemini-pro-agent": {
+          "name": "ag/gemini-pro-agent",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        },
+        "mmf/mimo-auto": {
+          "name": "mmf/mimo-auto",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        },
+        "gemini/gemini-3.1-pro-preview": {
+          "name": "gemini/gemini-3.1-pro-preview",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        },
+        "gemini/gemini-3.5-flash-lite": {
+          "name": "gemini/gemini-3.5-flash-lite",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        },
+        "oc/beam-free": {
+          "name": "oc/beam-free",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        },
+        "oc/big-pickle": {
+          "name": "oc/big-pickle",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        },
+        "oc/deepseek-v4.1-flash-free": {
+          "name": "oc/deepseek-v4.1-flash-free",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        },
+        "oc/glm-5.3-flash-free": {
+          "name": "oc/glm-5.3-flash-free",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        },
+        "oc/longcat-2.5-preview-free": {
+          "name": "oc/longcat-2.5-preview-free",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        },
+        "oc/mimo-v2.6-flash-free": {
+          "name": "oc/mimo-v2.6-flash-free",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        },
+        "oc/minimax-m3.1-flash-free": {
+          "name": "oc/minimax-m3.1-flash-free",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        },
+        "oc/nemotron-3.5-lightning-free": {
+          "name": "oc/nemotron-3.5-lightning-free",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        },
+        "oc/nemotron-3.5-super-vl-free": {
+          "name": "oc/nemotron-3.5-super-vl-free",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        }
+      }
+    }
+  },
+  "model": "9router/ag/claude-opus-4-6-thinking",
+  "agent": {
+    "explorer": {
+      "description": "Fast explorer subagent for codebase exploration",
+      "mode": "subagent",
+      "model": "9router/ag/claude-opus-4-6-thinking"
+    }
+  },
+  "mcp": {
+    "context7": {
+      "type": "remote",
+      "url": "https://mcp.context7.com/mcp",
+      "enabled": true,
+      "headers": {
+        "Authorization": "Bearer ctx7sk-1e59808e-f4ad-4f25-9a50-ca74bc01c68a"
+      }
+    }
+  }
 }

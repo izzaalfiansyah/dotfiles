@@ -371,7 +371,7 @@ themes {
     }
 }
 
-theme "catppuccin-moon"
+theme "onedark"
  
 // Choose the base input mode of zellij.
 // Default: normal

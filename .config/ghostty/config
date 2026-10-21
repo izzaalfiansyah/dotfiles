@@ -10,7 +10,7 @@ font-synthetic-style = true
 
 shell-integration = zsh
 
-background-opacity = 0.8
+background-opacity = 0.82
 background-blur = 55
 
 term = xterm-256color

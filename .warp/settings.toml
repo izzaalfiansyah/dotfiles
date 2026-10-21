@@ -2,6 +2,8 @@
 
 [code.editor]
 open_file_layout = "split_pane"
+show_global_search = false
+show_project_explorer = false
 
 [appearance]
 spacing = "compact"
@@ -13,7 +15,7 @@ notebook_font_size = 14.0
 font_size = 13.0
 match_ai_font = true
 font_name = "IosevkaTerm Nerd Font Mono"
-line_height_ratio = 1.149999976158142
+line_height_ratio = 1.100000023841858
 
 [appearance.blocks]
 show_block_dividers = false
@@ -37,15 +39,17 @@ input_mode = "waterfall"
 
 [appearance.window]
 open_windows_at_custom_size = false
-override_blur = 60
-override_opacity = 60
+override_blur = 49
+override_opacity = 70
+zoom_level = 100
+left_panel_visibility_across_tabs = true
 
 [appearance.themes]
 theme = { custom = { name = "Github Dark", path = "github_dark.yml" } }
 system_theme = false
 
 [appearance.panes]
-should_dim_inactive_panes = false
+should_dim_inactive_panes = true
 focus_pane_on_hover = false
 
 [appearance.cursor]
@@ -66,6 +70,9 @@ is_any_ai_enabled = false
 
 [agents.warp_agent.input]
 nld_in_terminal_enabled = true
+
+[agents.warp_agent.other]
+show_conversation_history = false
 
 [agents.execution_profiles]
 
@@ -157,6 +164,7 @@ grace_period = 60
 is_settings_sync_enabled = true
 
 [terminal]
+osc52_clipboard_access = "write_only"
 
 [terminal.input]
 honor_ps1 = false
