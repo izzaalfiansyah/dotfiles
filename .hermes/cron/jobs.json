@@ -22,15 +22,15 @@
       "schedule_display": "0 10 * * 1",
       "repeat": {
         "times": null,
-        "completed": 8
+        "completed": 9
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-07-05T12:37:22.101474+07:00",
-      "next_run_at": "2026-10-26T10:00:00+07:00",
-      "last_run_at": "2026-10-19T10:00:59.595162+07:00",
+      "next_run_at": "2026-11-02T10:00:00+07:00",
+      "last_run_at": "2026-10-26T10:00:35.997036+07:00",
       "last_status": "error",
       "last_error": "RuntimeError: No access token found for Nous Portal login. Run `hermes model` to re-authenticate.",
       "last_delivery_error": "live adapter send failed: invalid literal for int() with base 10: '/research'; live adapter delivery to discord:/research failed: invalid literal for int() with base 10: '/research'; delivery error: Discord API error (400): {\"message\": \"Invalid Form Body\", \"code\": 50035, \"errors\": {\"channel_id\": {\"_errors\": [{\"code\": \"NUMBER_TYPE_COERCE\", \"message\": \"Value \\\"research\\\" is not snowflake.\"}]}}}",
@@ -66,15 +66,15 @@
       "schedule_display": "0 10 * * *",
       "repeat": {
         "times": null,
-        "completed": 31
+        "completed": 35
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-07-05T12:40:28.834990+07:00",
-      "next_run_at": "2026-10-25T10:00:00+07:00",
-      "last_run_at": "2026-10-24T10:35:28.991416+07:00",
+      "next_run_at": "2026-10-29T10:00:00+07:00",
+      "last_run_at": "2026-10-28T10:00:33.853152+07:00",
       "last_status": "error",
       "last_error": "RuntimeError: No access token found for Nous Portal login. Run `hermes model` to re-authenticate.",
       "last_delivery_error": "live adapter send failed: invalid literal for int() with base 10: '/research'; live adapter delivery to discord:/research failed: invalid literal for int() with base 10: '/research'; delivery error: Discord API error (400): {\"message\": \"Invalid Form Body\", \"code\": 50035, \"errors\": {\"channel_id\": {\"_errors\": [{\"code\": \"NUMBER_TYPE_COERCE\", \"message\": \"Value \\\"research\\\" is not snowflake.\"}]}}}",
@@ -112,18 +112,18 @@
       "schedule_display": "0 16 * * 1-5",
       "repeat": {
         "times": null,
-        "completed": 27
+        "completed": 30
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-07-05T12:51:28.500195+07:00",
-      "next_run_at": "2026-10-26T16:00:00+07:00",
-      "last_run_at": "2026-10-23T16:44:29.273701+07:00",
+      "next_run_at": "2026-10-29T16:00:00+07:00",
+      "last_run_at": "2026-10-28T19:05:26.039583+07:00",
       "last_status": "error",
       "last_error": "RuntimeError: No access token found for Nous Portal login. Run `hermes model` to re-authenticate.",
-      "last_delivery_error": "live adapter send failed: invalid literal for int() with base 10: '/research'; live adapter delivery to discord:/research failed: invalid literal for int() with base 10: '/research'; delivery error: Discord send failed: Cannot connect to host discord.com:443 ssl:default [nodename nor servname provided, or not known]",
+      "last_delivery_error": "delivery error: Discord API error (400): {\"message\": \"Invalid Form Body\", \"code\": 50035, \"errors\": {\"channel_id\": {\"_errors\": [{\"code\": \"NUMBER_TYPE_COERCE\", \"message\": \"Value \\\"research\\\" is not snowflake.\"}]}}}",
       "deliver": "discord",
       "origin": null,
       "enabled_toolsets": [
@@ -135,5 +135,5 @@
       "fire_claim": null
     }
   ],
-  "updated_at": "2026-10-24T10:35:28.992678+07:00"
+  "updated_at": "2026-10-28T19:05:26.041290+07:00"
 }
