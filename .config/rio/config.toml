@@ -11,7 +11,7 @@ trail-cursor = true
 
 [fonts]
 size = 13.5
-family = "IosevkaTerm Nerd Font"
+family = "GeistMono Nerd Font"
 features = []
 use-drawable-chars = true
 symbol-map = []

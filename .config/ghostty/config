@@ -4,8 +4,8 @@ window-theme = system
 theme = light:Github Light,dark:Github Dark
 # theme = light:Atom One Light,dark:Atom One Dark
 
-font-family = Iosevka Term Medium
-font-size = 14
+font-family = GeistMono Nerd Font
+font-size = 13.5
 font-synthetic-style = true
 
 shell-integration = zsh

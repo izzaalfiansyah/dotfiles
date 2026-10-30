@@ -14,59 +14,59 @@
     "dock": "left"
   },
   "session": {
-    "trust_all_worktrees": true,
+    "trust_all_worktrees": true
   },
   "hard_tabs": false,
   "show_whitespaces": "selection",
   "git_panel": {
     "dock": "left",
     "tree_view": true,
-    "collapse_untracked_diff": true,
+    "collapse_untracked_diff": true
   },
   "git": {
     "inline_blame": {
-      "show_commit_summary": true,
-    },
+      "show_commit_summary": true
+    }
   },
   "helix_mode": false,
   "agent_servers": {
     "factory-droid": {
-      "type": "registry",
+      "type": "registry"
     },
     "opencode": {
-      "type": "registry",
-    },
+      "type": "registry"
+    }
   },
   "context_servers": {
     "mcp-server-notion": {
       "enabled": true,
       "remote": false,
       "settings": {
-        "notion_token": "",
-      },
+        "notion_token": ""
+      }
     },
     "mcp-server-github": {
       "enabled": true,
       "remote": false,
       "settings": {
-        "github_personal_access_token": "",
-      },
+        "github_personal_access_token": ""
+      }
     },
     "mcp-server-gitlab": {
       "enabled": true,
       "remote": false,
       "settings": {
-        "gitlab_personal_access_token": "",
-      },
-    },
+        "gitlab_personal_access_token": ""
+      }
+    }
   },
   "tab_size": 2,
   "agent": {
     "dock": "right",
     "default_model": {
       "provider": "CliProxy",
-      "model": "gemini-3-flash-preview",
-    },
+      "model": "gemini-3-flash-preview"
+    }
   },
   "language_models": {
     "openai_compatible": {
@@ -83,8 +83,8 @@
               "images": false,
               "parallel_tool_calls": false,
               "prompt_cache_key": false,
-              "chat_completions": true,
-            },
+              "chat_completions": true
+            }
           },
           {
             "name": "gemini-3-pro-image-preview",
@@ -96,8 +96,8 @@
               "images": false,
               "parallel_tool_calls": false,
               "prompt_cache_key": false,
-              "chat_completions": true,
-            },
+              "chat_completions": true
+            }
           },
           {
             "name": "gemini-2.5-flash",
@@ -109,17 +109,17 @@
               "images": false,
               "parallel_tool_calls": false,
               "prompt_cache_key": false,
-              "chat_completions": true,
-            },
-          },
-        ],
-      },
-    },
+              "chat_completions": true
+            }
+          }
+        ]
+      }
+    }
   },
   "theme": {
     "mode": "dark",
     "light": "GitHub Light",
-    "dark": "One Dark",
+    "dark": "One Dark"
   },
   "project_panel": {
     "dock": "left",
@@ -127,33 +127,33 @@
     "hide_root": false,
     "folder_icons": true,
     "scrollbar": {
-      "show": "auto",
+      "show": "auto"
     },
     "sticky_scroll": true,
     "indent_size": 18.0,
     "entry_spacing": "standard",
     "hide_gitignore": false,
-    "default_width": 240.0,
+    "default_width": 240.0
   },
   "tabs": {
     "file_icons": true,
-    "git_status": false,
+    "git_status": false
   },
   "tab_bar": {
     "show_nav_history_buttons": false,
-    "show": true,
+    "show": true
   },
   "title_bar": {
     "show_branch_status_icon": true,
-    "show_user_picture": true,
+    "show_user_picture": true
   },
   "diagnostics": {
     "inline": {
-      "enabled": true,
-    },
+      "enabled": true
+    }
   },
   "inlay_hints": {
-    "enabled": false,
+    "enabled": false
   },
   "relative_line_numbers": "disabled",
   "hide_mouse": "on_typing",
@@ -165,32 +165,32 @@
   "icon_theme": {
     "mode": "dark",
     "light": "Material Icon Theme",
-    "dark": "Material Icon Theme",
+    "dark": "Material Icon Theme"
   },
   "vim_mode": true,
   "terminal": {
     "option_as_meta": true,
     "dock": "right",
-    "font_size": 11.5,
+    "font_size": 11.5
   },
   "telemetry": {
     "diagnostics": true,
-    "metrics": true,
+    "metrics": true
   },
   "minimap": {
-    "show": "never",
+    "show": "never"
   },
   "cursor_blink": true,
   "file_types": {},
   "indent_guides": {
-    "enabled": false,
+    "enabled": false
   },
   "soft_wrap": "editor_width",
   "base_keymap": "VSCode",
   "ui_font_size": 13.0,
   "buffer_font_size": 12.0,
-  "ui_font_family": "Iosevka",
-  "buffer_font_family": "Iosevka Term",
+  "ui_font_family": "GeistMono Nerd Font",
+  "buffer_font_family": "GeistMono Nerd Font",
   "auto_install_extensions": {
     // lsp
     "html": true,
@@ -217,13 +217,13 @@
     "mcp-server-gitlab": true,
     "mcp-server-sequential-thinking": true,
     "mcp-server-exa-search": true,
-    "mcp-server-notion": true,
+    "mcp-server-notion": true
   },
   "prettier": {
-    "allowed": true,
+    "allowed": true
   },
   "feature_flags": {
     "tabular-data-preview": "on",
-    "notebooks": "on",
-  },
+    "notebooks": "on"
+  }
 }

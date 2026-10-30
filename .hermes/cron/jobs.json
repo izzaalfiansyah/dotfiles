@@ -66,15 +66,15 @@
       "schedule_display": "0 10 * * *",
       "repeat": {
         "times": null,
-        "completed": 35
+        "completed": 37
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-07-05T12:40:28.834990+07:00",
-      "next_run_at": "2026-10-29T10:00:00+07:00",
-      "last_run_at": "2026-10-28T10:00:33.853152+07:00",
+      "next_run_at": "2026-10-31T10:00:00+07:00",
+      "last_run_at": "2026-10-30T10:00:36.635920+07:00",
       "last_status": "error",
       "last_error": "RuntimeError: No access token found for Nous Portal login. Run `hermes model` to re-authenticate.",
       "last_delivery_error": "live adapter send failed: invalid literal for int() with base 10: '/research'; live adapter delivery to discord:/research failed: invalid literal for int() with base 10: '/research'; delivery error: Discord API error (400): {\"message\": \"Invalid Form Body\", \"code\": 50035, \"errors\": {\"channel_id\": {\"_errors\": [{\"code\": \"NUMBER_TYPE_COERCE\", \"message\": \"Value \\\"research\\\" is not snowflake.\"}]}}}",
@@ -112,18 +112,18 @@
       "schedule_display": "0 16 * * 1-5",
       "repeat": {
         "times": null,
-        "completed": 30
+        "completed": 32
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-07-05T12:51:28.500195+07:00",
-      "next_run_at": "2026-10-29T16:00:00+07:00",
-      "last_run_at": "2026-10-28T19:05:26.039583+07:00",
+      "next_run_at": "2026-11-02T16:00:00+07:00",
+      "last_run_at": "2026-10-30T16:46:08.251091+07:00",
       "last_status": "error",
       "last_error": "RuntimeError: No access token found for Nous Portal login. Run `hermes model` to re-authenticate.",
-      "last_delivery_error": "delivery error: Discord API error (400): {\"message\": \"Invalid Form Body\", \"code\": 50035, \"errors\": {\"channel_id\": {\"_errors\": [{\"code\": \"NUMBER_TYPE_COERCE\", \"message\": \"Value \\\"research\\\" is not snowflake.\"}]}}}",
+      "last_delivery_error": "live adapter send failed: invalid literal for int() with base 10: '/research'; live adapter delivery to discord:/research failed: invalid literal for int() with base 10: '/research'; delivery error: Discord API error (400): {\"message\": \"Invalid Form Body\", \"code\": 50035, \"errors\": {\"channel_id\": {\"_errors\": [{\"code\": \"NUMBER_TYPE_COERCE\", \"message\": \"Value \\\"research\\\" is not snowflake.\"}]}}}",
       "deliver": "discord",
       "origin": null,
       "enabled_toolsets": [
@@ -135,5 +135,5 @@
       "fire_claim": null
     }
   ],
-  "updated_at": "2026-10-28T19:05:26.041290+07:00"
+  "updated_at": "2026-10-30T16:46:08.252527+07:00"
 }

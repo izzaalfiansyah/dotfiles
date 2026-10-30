@@ -10,11 +10,11 @@ spacing = "compact"
 
 [appearance.text]
 ligature_rendering_enabled = true
-ai_font_name = "IosevkaTerm Nerd Font Mono"
+ai_font_name = "GeistMono Nerd Font"
 notebook_font_size = 14.0
 font_size = 13.0
 match_ai_font = true
-font_name = "IosevkaTerm Nerd Font Mono"
+font_name = "GeistMono Nerd Font"
 line_height_ratio = 1.100000023841858
 
 [appearance.blocks]
@@ -199,8 +199,6 @@ new_window = { custom_dir = "", mode = "home_dir" }
 split_pane = { custom_dir = "", mode = "previous_dir" }
 
 [privacy]
-crash_reporting_enabled = true
-telemetry_enabled = true
 custom_secret_regex_list = [
   { name = "IPv4 Address", pattern = '\b((25[0-5]|(2[0-4]|1\d|[1-9]|)\d)\.?\b){4}\b' },
   {
@@ -231,7 +229,8 @@ custom_secret_regex_list = [
   { name = "Anthropic API Key", pattern = '\bsk-ant-api\d{0,2}-[a-zA-Z0-9\-]{80,120}\b' },
   { name = "Generic SK API Key", pattern = '\bsk-[a-zA-Z0-9\-]{10,100}\b' },
   { name = "Fireworks API Key", pattern = '\bfw_[a-zA-Z0-9]{24}\b' },
-]
+]crash_reporting_enabled = true
+telemetry_enabled = true
 
 [warp_drive]
 enabled = false

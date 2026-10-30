@@ -20,7 +20,7 @@ This repository contains my personal dotfiles configuration for various tools an
 
 - **[Iosevka Term](https://typeof.net/Iosevka/)**: Customizable monospace font used in terminal emulators.
 - **[JetBrains Mono NL](https://www.jetbrains.com/lp/mono/)**: Monospace font without ligatures, optimized for coding.
-- **[Hack Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Hack)**: Hack font with Nerd Font icons.
+- **[Geist Mono Font](https://vercel.com/font?type=mono)**: Geist font with Nerd Font icons.
 - **[Fira Code](https://github.com/tonsky/FiraCode)**: Monospace font with programming ligatures.
 
 ### Text Editors/IDEs
