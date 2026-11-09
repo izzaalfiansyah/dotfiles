@@ -55,7 +55,6 @@ vim.keymap.set("v", "<C-S-z>", ":redo<CR>", opts)
 vim.keymap.set("i", "<C-S-z>", ":redo<CR>", opts)
 
 -- Screenshot
-vim.keymap.set("v", "<leader>cs", ":CodeSnap<CR>", { silent = true })
 vim.keymap.set("v", "<leader>sc", function()
   require("nvim-silicon").clip()
-end, { desc = "Copy code screenshot to clipboard", silent = true })
+end, { desc = "Copy code screenshot to clipboard", silent = true, noremap = true })
